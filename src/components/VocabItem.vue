@@ -9,6 +9,10 @@ const props = defineProps({
   definitionLanguage: {
     type: String,
     default: 'CJK' // 'CJK', 'C', 'J', 'K' - determines which definition text to show
+  },
+  searchQuery: {
+    type: String,
+    default: ''
   }
 })
 
@@ -104,6 +108,20 @@ const getExamples = (langCode, defIndex) => {
   return []
 }
 
+const highlight = (text) => {
+  if (!text) return ''
+  if (!props.searchQuery) return text
+  
+  const query = props.searchQuery.trim()
+  if (!query) return text
+
+  // Escape special regex characters in query
+  const safeQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  const regex = new RegExp(`(${safeQuery})`, 'gi')
+  
+  return text.replace(regex, '<span class="highlight">$1</span>')
+}
+
 </script>
 
 <template>
@@ -111,16 +129,16 @@ const getExamples = (langCode, defIndex) => {
     <!-- Header Row -->
     <div class="header-row">
       <div class="header-col chinese">
-        <span class="word">{{ item.chinese.word }}</span>
-        <span class="romanization">【{{ item.chinese.romanization }}】</span>
+        <span class="word" v-html="highlight(item.chinese.word)"></span>
+        <span class="romanization">【<span v-html="highlight(item.chinese.romanization)"></span>】</span>
       </div>
       <div class="header-col japanese">
-        <span class="word">{{ item.japanese.word }}</span>
-        <span class="romanization">【{{ item.japanese.pronunciation }} {{ item.japanese.romanization }}】</span>
+        <span class="word" v-html="highlight(item.japanese.word)"></span>
+        <span class="romanization">【<span v-html="highlight(item.japanese.pronunciation)"></span> <span v-html="highlight(item.japanese.romanization)"></span>】</span>
       </div>
       <div class="header-col korean">
-        <span class="word">{{ item.korean.word }}</span>
-        <span class="romanization">【{{ item.korean.pronunciation }} {{ item.korean.romanization }}】</span>
+        <span class="word" v-html="highlight(item.korean.word)"></span>
+        <span class="romanization">【<span v-html="highlight(item.korean.pronunciation)"></span> <span v-html="highlight(item.korean.romanization)"></span>】</span>
       </div>
     </div>
 
@@ -130,7 +148,7 @@ const getExamples = (langCode, defIndex) => {
       <div class="definition-row">
         <div class="def-text">
           <span class="index">{{ index + 1 }}.</span>
-          {{ getDefinitionText(index) }}
+          <span v-html="highlight(getDefinitionText(index))"></span>
         </div>
         <div class="lang-toggles">
           <button @click="setLang('C')" :class="{ active: localDefLang === 'C' }" class="btn-c">C</button>
@@ -143,17 +161,17 @@ const getExamples = (langCode, defIndex) => {
       <div class="examples-row">
         <div class="ex-col chinese">
           <div v-for="(ex, i) in getExamples('C', index)" :key="i" class="example">
-            <span class="ex-index">①</span> {{ ex }} <!-- Using circled numbers manually for now, or CSS counters -->
+            <span class="ex-index">①</span> <span v-html="highlight(ex)"></span>
           </div>
         </div>
         <div class="ex-col japanese">
           <div v-for="(ex, i) in getExamples('J', index)" :key="i" class="example">
-            <span class="ex-index">①</span> {{ ex }}
+            <span class="ex-index">①</span> <span v-html="highlight(ex)"></span>
           </div>
         </div>
         <div class="ex-col korean">
           <div v-for="(ex, i) in getExamples('K', index)" :key="i" class="example">
-            <span class="ex-index">①</span> {{ ex }}
+            <span class="ex-index">①</span> <span v-html="highlight(ex)"></span>
           </div>
         </div>
       </div>
@@ -233,5 +251,14 @@ const getExamples = (langCode, defIndex) => {
   margin-bottom: 5px;
   font-size: 0.95em;
   color: #555;
+}
+
+:deep(.highlight) {
+  background-color: #00e676; /* Brighter green */
+  color: #000; /* Black text for better contrast */
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 0 4px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 </style>

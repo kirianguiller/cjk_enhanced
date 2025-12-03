@@ -53,6 +53,7 @@ const filteredList = computed(() => {
       :key="item.rank" 
       :item="item"
       :definition-language="globalDefLang"
+      :search-query="searchQuery"
     />
     <div v-if="filteredList.length === 0" class="no-results">
       No results found for "{{ searchQuery }}"
