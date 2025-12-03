@@ -145,7 +145,7 @@ const highlight = (text) => {
     <!-- Definitions Loop -->
     <div v-for="(def, index) in item.chinese.definitions" :key="index" class="definition-group">
       <!-- Definition Text Row -->
-      <div class="definition-row">
+      <div class="definition-row" :class="['bg-' + localDefLang]">
         <div class="def-text">
           <span class="index">{{ index + 1 }}.</span>
           <span v-html="highlight(getDefinitionText(index))"></span>
@@ -211,9 +211,12 @@ const highlight = (text) => {
   justify-content: space-between;
   align-items: center;
   padding: 10px 15px;
-  background-color: var(--bg-chinese-light); /* Default to pinkish light? Or dynamic? */
-  /* Screenshot shows pink background for definition row */
+  transition: background-color 0.3s ease;
 }
+
+.bg-C { background-color: var(--bg-chinese-light); }
+.bg-J { background-color: var(--bg-japanese-light); }
+.bg-K { background-color: var(--bg-korean-light); }
 
 .def-text {
   font-size: 1.1em;
