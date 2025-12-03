@@ -1,0 +1,185 @@
+[
+    {
+        "rank": 1,
+        "chinese": {
+            "word": "时间",
+            "page": 18,
+            "romanization": "shíjiān",
+            "definitions": [
+                {
+                    "text": "有起点和终点的一段时间。",
+                    "language": "CJK",
+                    "examples": [
+                        "工作时间",
+                        "那项工作要花费很多时间。",
+                        "地球自转一周的时间是二十四小时。"
+                    ]
+                },
+                {
+                    "text": "时刻。",
+                    "language": "CJK",
+                    "examples": [
+                        "请告诉我飞机的着陆时间。",
+                        "比约定的时间晚到了一会儿。",
+                        "现在是三点十五分。"
+                    ]
+                },
+                {
+                    "text": "由过去、现在和将来构成的连续不断的系统。",
+                    "language": "CJK",
+                    "examples": [
+                        "时间的流逝",
+                        "从那之后过了很长时间。",
+                        "时间不等人。"
+                    ]
+                },
+                {
+                    "text": "一天的二十四分之一，六十分钟。",
+                    "language": "JK",
+                    "examples": [
+                        "〔到机场需要两个小时。〕"
+                    ],
+                    "alternative": "小时(xiǎo shí)"
+                }
+            ]
+        },
+        "japanese": {
+            "word": "時間",
+            "page": 18,
+            "pronunciation": "じかん",
+            "romanization": "jikan",
+            "definitions": [
+                {
+                    "text": "ある時刻からある時刻までの間。",
+                    "language": "JCK",
+                    "examples": [
+                        "勤務時間",
+                        "その仕事には時間がかかる。",
+                        "地球が一周自転するのにかかる時間は24時間だ。"
+                    ]
+                },
+                {
+                    "text": "時刻。",
+                    "language": "JCK",
+                    "examples": [
+                        "飛行機の到着時間を教えてください。",
+                        "約束の時間に遅れた。",
+                        "現在の時間は3時15分だ。"
+                    ]
+                },
+                {
+                    "text": "過去から現在を経て未来へと絶え間なく流れて行くもの。",
+                    "language": "JCK",
+                    "examples": [
+                        "時間の流れ",
+                        "それから長い時間がたった。",
+                        "時間は待ってはくれない。"
+                    ]
+                },
+                {
+                    "text": "一日の長さを24で割った長さ。60分の間。",
+                    "language": "JK",
+                    "examples": [
+                        "空港まで2時間かかる。"
+                    ]
+                }
+            ]
+        },
+        "korean": {
+            "word": "時間",
+            "page": 18,
+            "pronunciation": "시간",
+            "romanization": "sigan",
+            "definitions": [
+                {
+                    "text": "어떤 시각에서 어떤 시각까지의 사이.",
+                    "language": "KJC",
+                    "examples": [
+                        "근무 시간",
+                        "그 일은 시간이 많이 걸린다.",
+                        "지구가 한 바퀴 자전하는 데 걸리는 시간은 24시간이다."
+                    ]
+                },
+                {
+                    "text": "시각(時刻).",
+                    "language": "KJC",
+                    "examples": [
+                        "비행기 도착 시간을 알려주세요.",
+                        "약속 시간에 늦었다.",
+                        "현재 시간은 3시 15분이다."
+                    ]
+                },
+                {
+                    "text": "과거로부터 현재를 거쳐 미래로 끊임없이 흘러가는 것.",
+                    "language": "KJC",
+                    "examples": [
+                        "시간의 흐름",
+                        "그 후로 시간이 많이 흘렀다.",
+                        "시간은 기다려 주지 않는다."
+                    ]
+                },
+                {
+                    "text": "하루를 24로 나눈 길이. 60분 동안.",
+                    "language": "KJ",
+                    "examples": [
+                        "공항까지 두 시간 걸린다."
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "rank": 2,
+        "chinese": {
+            "word": "价格",
+            "page": 18,
+            "romanization": "jiàgé",
+            "definitions": [
+                {
+                    "text": "商品或服务价值的货币表现。",
+                    "language": "CJK",
+                    "examples": [
+                        "合理价格",
+                        "价格上涨",
+                        "普通的学生买不起价格太贵的商品。"
+                    ]
+                }
+            ]
+        },
+        "japanese": {
+            "word": "価格",
+            "page": 18,
+            "pronunciation": "かかく",
+            "romanization": "kakaku",
+            "definitions": [
+                {
+                    "text": "物事やサービスの価値をお金で表現したもの。",
+                    "language": "JCK",
+                    "examples": [
+                        "適正価格",
+                        "価格が上昇する",
+                        "普通の学生はそんなに 高価な/値段の高い/高い値段 のものは買えない。"
+                    ],
+                    "synonym": "値段 ( ねだん )"
+                }
+            ]
+        },
+        "korean": {
+            "word": "價格",
+            "page": 18,
+            "pronunciation": "가격",
+            "romanization": "gagyeok",
+            "definitions": [
+                {
+                    "text": "사물이나 서비스의 가치를 돈으로 나타낸 것.",
+                    "language": "KJC",
+                    "examples": [
+                        "적정 가격",
+                        "가격이 오르다",
+                        "보통의 학생은 그렇게 높은 가격의 물건을 살 수 없다."
+                    ]
+                }
+            ]
+        }
+    }
+]
