@@ -10,36 +10,472 @@
                     "text": "有起点和终点的一段时间。",
                     "language": "CJK",
                     "examples": [
-                        "工作时间",
-                        "那项工作要花费很多时间。",
-                        "地球自转一周的时间是二十四小时。"
-                    ]
+                        {
+                            "text": "工作时间",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "工作",
+                                        "reading": "gōngzuò"
+                                    },
+                                    {
+                                        "base": "时间",
+                                        "reading": "shíjiān"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "那项工作要花费很多时间。",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "那",
+                                        "reading": "nà"
+                                    },
+                                    {
+                                        "base": "项",
+                                        "reading": "xiàng"
+                                    },
+                                    {
+                                        "base": "工作",
+                                        "reading": "gōngzuò"
+                                    },
+                                    {
+                                        "base": "要花费",
+                                        "reading": "yàohuāfèi"
+                                    },
+                                    {
+                                        "base": "很多",
+                                        "reading": "hěnduō"
+                                    },
+                                    {
+                                        "base": "时间",
+                                        "reading": "shíjiān"
+                                    },
+                                    {
+                                        "base": "。",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "地球自转一周的时间是二十四小时。",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "地球",
+                                        "reading": "dìqiú"
+                                    },
+                                    {
+                                        "base": "自转",
+                                        "reading": "zìzhuàn"
+                                    },
+                                    {
+                                        "base": "一周",
+                                        "reading": "yīzhōu"
+                                    },
+                                    {
+                                        "base": "的",
+                                        "reading": "de"
+                                    },
+                                    {
+                                        "base": "时间",
+                                        "reading": "shíjiān"
+                                    },
+                                    {
+                                        "base": "是",
+                                        "reading": "shì"
+                                    },
+                                    {
+                                        "base": "二十四",
+                                        "reading": "èrshísì"
+                                    },
+                                    {
+                                        "base": "小时",
+                                        "reading": "xiǎoshí"
+                                    },
+                                    {
+                                        "base": "。",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "transcription": {
+                        "segments": [
+                            {
+                                "base": "有",
+                                "reading": "yǒu"
+                            },
+                            {
+                                "base": "起点",
+                                "reading": "qǐdiǎn"
+                            },
+                            {
+                                "base": "和",
+                                "reading": "hé"
+                            },
+                            {
+                                "base": "终点",
+                                "reading": "zhōngdiǎn"
+                            },
+                            {
+                                "base": "的",
+                                "reading": "de"
+                            },
+                            {
+                                "base": "一段时间",
+                                "reading": "yīduànshíjiān"
+                            },
+                            {
+                                "base": "。",
+                                "reading": null
+                            }
+                        ]
+                    }
                 },
                 {
                     "text": "时刻。",
                     "language": "CJK",
                     "examples": [
-                        "请告诉我飞机的着陆时间。",
-                        "比约定的时间晚到了一会儿。",
-                        "现在是三点十五分。"
-                    ]
+                        {
+                            "text": "请告诉我飞机的着陆时间。",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "请",
+                                        "reading": "qǐng"
+                                    },
+                                    {
+                                        "base": "告诉",
+                                        "reading": "gàosù"
+                                    },
+                                    {
+                                        "base": "我",
+                                        "reading": "wǒ"
+                                    },
+                                    {
+                                        "base": "飞机",
+                                        "reading": "fēijī"
+                                    },
+                                    {
+                                        "base": "的",
+                                        "reading": "de"
+                                    },
+                                    {
+                                        "base": "着陆",
+                                        "reading": "zhuólù"
+                                    },
+                                    {
+                                        "base": "时间",
+                                        "reading": "shíjiān"
+                                    },
+                                    {
+                                        "base": "。",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "比约定的时间晚到了一会儿。",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "比",
+                                        "reading": "bǐ"
+                                    },
+                                    {
+                                        "base": "约定",
+                                        "reading": "yuēdìng"
+                                    },
+                                    {
+                                        "base": "的",
+                                        "reading": "de"
+                                    },
+                                    {
+                                        "base": "时间",
+                                        "reading": "shíjiān"
+                                    },
+                                    {
+                                        "base": "晚到",
+                                        "reading": "wǎndào"
+                                    },
+                                    {
+                                        "base": "了",
+                                        "reading": "le"
+                                    },
+                                    {
+                                        "base": "一会儿",
+                                        "reading": "yīhuìer"
+                                    },
+                                    {
+                                        "base": "。",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "现在是三点十五分。",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "现在",
+                                        "reading": "xiànzài"
+                                    },
+                                    {
+                                        "base": "是",
+                                        "reading": "shì"
+                                    },
+                                    {
+                                        "base": "三点",
+                                        "reading": "sāndiǎn"
+                                    },
+                                    {
+                                        "base": "十五分",
+                                        "reading": "shíwǔfēn"
+                                    },
+                                    {
+                                        "base": "。",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "transcription": {
+                        "segments": [
+                            {
+                                "base": "时刻",
+                                "reading": "shíkè"
+                            },
+                            {
+                                "base": "。",
+                                "reading": null
+                            }
+                        ]
+                    }
                 },
                 {
                     "text": "由过去、现在和将来构成的连续不断的系统。",
                     "language": "CJK",
                     "examples": [
-                        "时间的流逝",
-                        "从那之后过了很长时间。",
-                        "时间不等人。"
-                    ]
+                        {
+                            "text": "时间的流逝",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "时间",
+                                        "reading": "shíjiān"
+                                    },
+                                    {
+                                        "base": "的",
+                                        "reading": "de"
+                                    },
+                                    {
+                                        "base": "流逝",
+                                        "reading": "liúshì"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "从那之后过了很长时间。",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "从那之后",
+                                        "reading": "cóngnàzhīhòu"
+                                    },
+                                    {
+                                        "base": "过",
+                                        "reading": "guò"
+                                    },
+                                    {
+                                        "base": "了",
+                                        "reading": "le"
+                                    },
+                                    {
+                                        "base": "很",
+                                        "reading": "hěn"
+                                    },
+                                    {
+                                        "base": "长时间",
+                                        "reading": "zhǎngshíjiān"
+                                    },
+                                    {
+                                        "base": "。",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "时间不等人。",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "时间",
+                                        "reading": "shíjiān"
+                                    },
+                                    {
+                                        "base": "不",
+                                        "reading": "bù"
+                                    },
+                                    {
+                                        "base": "等",
+                                        "reading": "děng"
+                                    },
+                                    {
+                                        "base": "人",
+                                        "reading": "rén"
+                                    },
+                                    {
+                                        "base": "。",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "transcription": {
+                        "segments": [
+                            {
+                                "base": "由",
+                                "reading": "yóu"
+                            },
+                            {
+                                "base": "过去",
+                                "reading": "guòqù"
+                            },
+                            {
+                                "base": "、",
+                                "reading": null
+                            },
+                            {
+                                "base": "现在",
+                                "reading": "xiànzài"
+                            },
+                            {
+                                "base": "和",
+                                "reading": "hé"
+                            },
+                            {
+                                "base": "将来",
+                                "reading": "jiānglái"
+                            },
+                            {
+                                "base": "构成",
+                                "reading": "gòuchéng"
+                            },
+                            {
+                                "base": "的",
+                                "reading": "de"
+                            },
+                            {
+                                "base": "连续不断",
+                                "reading": "liánxùbùduàn"
+                            },
+                            {
+                                "base": "的",
+                                "reading": "de"
+                            },
+                            {
+                                "base": "系统",
+                                "reading": "xìtǒng"
+                            },
+                            {
+                                "base": "。",
+                                "reading": null
+                            }
+                        ]
+                    }
                 },
                 {
                     "text": "一天的二十四分之一，六十分钟。",
                     "language": "JK",
                     "examples": [
-                        "〔到机场需要两个小时。〕"
+                        {
+                            "text": "〔到机场需要两个小时。〕",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "〔",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "到",
+                                        "reading": "dào"
+                                    },
+                                    {
+                                        "base": "机场",
+                                        "reading": "jīchǎng"
+                                    },
+                                    {
+                                        "base": "需要",
+                                        "reading": "xūyào"
+                                    },
+                                    {
+                                        "base": "两个",
+                                        "reading": "liǎnggè"
+                                    },
+                                    {
+                                        "base": "小时",
+                                        "reading": "xiǎoshí"
+                                    },
+                                    {
+                                        "base": "。",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "〕",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        }
                     ],
-                    "alternative": "小时(xiǎo shí)"
+                    "alternative": "小时(xiǎo shí)",
+                    "transcription": {
+                        "segments": [
+                            {
+                                "base": "一天",
+                                "reading": "yītiān"
+                            },
+                            {
+                                "base": "的",
+                                "reading": "de"
+                            },
+                            {
+                                "base": "二十四分",
+                                "reading": "èrshísìfēn"
+                            },
+                            {
+                                "base": "之一",
+                                "reading": "zhīyī"
+                            },
+                            {
+                                "base": "，",
+                                "reading": null
+                            },
+                            {
+                                "base": "六十",
+                                "reading": "liùshí"
+                            },
+                            {
+                                "base": "分钟",
+                                "reading": "fēnzhōng"
+                            },
+                            {
+                                "base": "。",
+                                "reading": null
+                            }
+                        ]
+                    }
                 }
             ]
         },
@@ -53,35 +489,507 @@
                     "text": "ある時刻からある時刻までの間。",
                     "language": "JCK",
                     "examples": [
-                        "勤務時間",
-                        "その仕事には時間がかかる。",
-                        "地球が一周自転するのにかかる時間は24時間だ。"
-                    ]
+                        {
+                            "text": "勤務時間",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "勤務時間",
+                                        "reading": "きんむじかん"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "その仕事には時間がかかる。",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "その",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "仕事",
+                                        "reading": "しごと"
+                                    },
+                                    {
+                                        "base": "には",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "時間",
+                                        "reading": "じかん"
+                                    },
+                                    {
+                                        "base": "がかかる",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "。",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "地球が一周自転するのにかかる時間は24時間だ。",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "地球",
+                                        "reading": "ちきゅう"
+                                    },
+                                    {
+                                        "base": "が",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "一周",
+                                        "reading": "いっしゅう"
+                                    },
+                                    {
+                                        "base": "自転",
+                                        "reading": "じてん"
+                                    },
+                                    {
+                                        "base": "するのにかかる",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "時間",
+                                        "reading": "じかん"
+                                    },
+                                    {
+                                        "base": "は",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "24",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "時間",
+                                        "reading": "じかん"
+                                    },
+                                    {
+                                        "base": "だ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "。",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "transcription": {
+                        "segments": [
+                            {
+                                "base": "ある",
+                                "reading": null
+                            },
+                            {
+                                "base": "時刻",
+                                "reading": "じこく"
+                            },
+                            {
+                                "base": "からある",
+                                "reading": null
+                            },
+                            {
+                                "base": "時刻",
+                                "reading": "じこく"
+                            },
+                            {
+                                "base": "までの",
+                                "reading": null
+                            },
+                            {
+                                "base": "間",
+                                "reading": "かん"
+                            },
+                            {
+                                "base": "。",
+                                "reading": null
+                            }
+                        ]
+                    }
                 },
                 {
                     "text": "時刻。",
                     "language": "JCK",
                     "examples": [
-                        "飛行機の到着時間を教えてください。",
-                        "約束の時間に遅れた。",
-                        "現在の時間は3時15分だ。"
-                    ]
+                        {
+                            "text": "飛行機の到着時間を教えてください。",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "飛行機",
+                                        "reading": "ひこうき"
+                                    },
+                                    {
+                                        "base": "の",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "到着時間",
+                                        "reading": "とうちゃくじかん"
+                                    },
+                                    {
+                                        "base": "を",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "教え",
+                                        "reading": "おしえ"
+                                    },
+                                    {
+                                        "base": "てください",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "。",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "約束の時間に遅れた。",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "約束",
+                                        "reading": "やくそく"
+                                    },
+                                    {
+                                        "base": "の",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "時間",
+                                        "reading": "じかん"
+                                    },
+                                    {
+                                        "base": "に",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "遅れ",
+                                        "reading": "おくれ"
+                                    },
+                                    {
+                                        "base": "た",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "。",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "現在の時間は3時15分だ。",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "現在",
+                                        "reading": "げんざい"
+                                    },
+                                    {
+                                        "base": "の",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "時間",
+                                        "reading": "じかん"
+                                    },
+                                    {
+                                        "base": "は",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "3",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "時",
+                                        "reading": "とき"
+                                    },
+                                    {
+                                        "base": "15",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "分",
+                                        "reading": "ふん"
+                                    },
+                                    {
+                                        "base": "だ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "。",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "transcription": {
+                        "segments": [
+                            {
+                                "base": "時刻",
+                                "reading": "じこく"
+                            },
+                            {
+                                "base": "。",
+                                "reading": null
+                            }
+                        ]
+                    }
                 },
                 {
                     "text": "過去から現在を経て未来へと絶え間なく流れて行くもの。",
                     "language": "JCK",
                     "examples": [
-                        "時間の流れ",
-                        "それから長い時間がたった。",
-                        "時間は待ってはくれない。"
-                    ]
+                        {
+                            "text": "時間の流れ",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "時間",
+                                        "reading": "じかん"
+                                    },
+                                    {
+                                        "base": "の",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "流れ",
+                                        "reading": "ながれ"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "それから長い時間がたった。",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "それから",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "長い",
+                                        "reading": "ながい"
+                                    },
+                                    {
+                                        "base": "時間",
+                                        "reading": "じかん"
+                                    },
+                                    {
+                                        "base": "がたった",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "。",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "時間は待ってはくれない。",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "時間",
+                                        "reading": "じかん"
+                                    },
+                                    {
+                                        "base": "は",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "待っ",
+                                        "reading": "まっ"
+                                    },
+                                    {
+                                        "base": "てはくれない",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "。",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "transcription": {
+                        "segments": [
+                            {
+                                "base": "過去",
+                                "reading": "かこ"
+                            },
+                            {
+                                "base": "から",
+                                "reading": null
+                            },
+                            {
+                                "base": "現在",
+                                "reading": "げんざい"
+                            },
+                            {
+                                "base": "を",
+                                "reading": null
+                            },
+                            {
+                                "base": "経て",
+                                "reading": "へて"
+                            },
+                            {
+                                "base": "未来",
+                                "reading": "みらい"
+                            },
+                            {
+                                "base": "へと",
+                                "reading": null
+                            },
+                            {
+                                "base": "絶え間",
+                                "reading": "たえま"
+                            },
+                            {
+                                "base": "なく",
+                                "reading": null
+                            },
+                            {
+                                "base": "流れ",
+                                "reading": "ながれ"
+                            },
+                            {
+                                "base": "て",
+                                "reading": null
+                            },
+                            {
+                                "base": "行く",
+                                "reading": "いく"
+                            },
+                            {
+                                "base": "もの",
+                                "reading": null
+                            },
+                            {
+                                "base": "。",
+                                "reading": null
+                            }
+                        ]
+                    }
                 },
                 {
                     "text": "一日の長さを24で割った長さ。60分の間。",
                     "language": "JK",
                     "examples": [
-                        "空港まで2時間かかる。"
-                    ]
+                        {
+                            "text": "空港まで2時間かかる。",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "空港",
+                                        "reading": "くうこう"
+                                    },
+                                    {
+                                        "base": "まで",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "2",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "時間",
+                                        "reading": "じかん"
+                                    },
+                                    {
+                                        "base": "かかる",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "。",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "transcription": {
+                        "segments": [
+                            {
+                                "base": "一日",
+                                "reading": "ついたち"
+                            },
+                            {
+                                "base": "の",
+                                "reading": null
+                            },
+                            {
+                                "base": "長さ",
+                                "reading": "ながさ"
+                            },
+                            {
+                                "base": "を",
+                                "reading": null
+                            },
+                            {
+                                "base": "24",
+                                "reading": null
+                            },
+                            {
+                                "base": "で",
+                                "reading": null
+                            },
+                            {
+                                "base": "割っ",
+                                "reading": "さっ"
+                            },
+                            {
+                                "base": "た",
+                                "reading": null
+                            },
+                            {
+                                "base": "長さ",
+                                "reading": "ながさ"
+                            },
+                            {
+                                "base": "。",
+                                "reading": null
+                            },
+                            {
+                                "base": "60",
+                                "reading": null
+                            },
+                            {
+                                "base": "分",
+                                "reading": "ふん"
+                            },
+                            {
+                                "base": "の",
+                                "reading": null
+                            },
+                            {
+                                "base": "間",
+                                "reading": "かん"
+                            },
+                            {
+                                "base": "。",
+                                "reading": null
+                            }
+                        ]
+                    }
                 }
             ]
         },
@@ -95,35 +1003,599 @@
                     "text": "어떤 시각에서 어떤 시각까지의 사이.",
                     "language": "KJC",
                     "examples": [
-                        "근무 시간",
-                        "그 일은 시간이 많이 걸린다.",
-                        "지구가 한 바퀴 자전하는 데 걸리는 시간은 24시간이다."
-                    ]
+                        {
+                            "text": "근무 시간",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "근무",
+                                        "reading": "geunmu"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "시간",
+                                        "reading": "sigan"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "그 일은 시간이 많이 걸린다.",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "그",
+                                        "reading": "geu"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "일은",
+                                        "reading": "il-eun"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "시간이",
+                                        "reading": "sigan-i"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "많이",
+                                        "reading": "manh-i"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "걸린다",
+                                        "reading": "geollinda"
+                                    },
+                                    {
+                                        "base": ".",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "지구가 한 바퀴 자전하는 데 걸리는 시간은 24시간이다.",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "지구가",
+                                        "reading": "jiguga"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "한",
+                                        "reading": "han"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "바퀴",
+                                        "reading": "bakwi"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "자전하는",
+                                        "reading": "jajeonhaneun"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "데",
+                                        "reading": "de"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "걸리는",
+                                        "reading": "geollineun"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "시간은",
+                                        "reading": "sigan-eun"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "24시간이다",
+                                        "reading": "24sigan-ida"
+                                    },
+                                    {
+                                        "base": ".",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "transcription": {
+                        "segments": [
+                            {
+                                "base": "어떤",
+                                "reading": "eo-tteon"
+                            },
+                            {
+                                "base": " ",
+                                "reading": null
+                            },
+                            {
+                                "base": "시각에서",
+                                "reading": "sigag-eseo"
+                            },
+                            {
+                                "base": " ",
+                                "reading": null
+                            },
+                            {
+                                "base": "어떤",
+                                "reading": "eo-tteon"
+                            },
+                            {
+                                "base": " ",
+                                "reading": null
+                            },
+                            {
+                                "base": "시각까지의",
+                                "reading": "sigagkkaji-ui"
+                            },
+                            {
+                                "base": " ",
+                                "reading": null
+                            },
+                            {
+                                "base": "사이",
+                                "reading": "sa-i"
+                            },
+                            {
+                                "base": ".",
+                                "reading": null
+                            }
+                        ]
+                    }
                 },
                 {
                     "text": "시각(時刻).",
                     "language": "KJC",
                     "examples": [
-                        "비행기 도착 시간을 알려주세요.",
-                        "약속 시간에 늦었다.",
-                        "현재 시간은 3시 15분이다."
-                    ]
+                        {
+                            "text": "비행기 도착 시간을 알려주세요.",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "비행기",
+                                        "reading": "bihaenggi"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "도착",
+                                        "reading": "dochag"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "시간을",
+                                        "reading": "sigan-eul"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "알려주세요",
+                                        "reading": "allyeojuse-yo"
+                                    },
+                                    {
+                                        "base": ".",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "약속 시간에 늦었다.",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "약속",
+                                        "reading": "yagsog"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "시간에",
+                                        "reading": "sigan-e"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "늦었다",
+                                        "reading": "neuj-eossda"
+                                    },
+                                    {
+                                        "base": ".",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "현재 시간은 3시 15분이다.",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "현재",
+                                        "reading": "hyeonjae"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "시간은",
+                                        "reading": "sigan-eun"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "3시",
+                                        "reading": "3si"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "15분이다",
+                                        "reading": "15bun-ida"
+                                    },
+                                    {
+                                        "base": ".",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "transcription": {
+                        "segments": [
+                            {
+                                "base": "시각",
+                                "reading": "sigag"
+                            },
+                            {
+                                "base": "(",
+                                "reading": null
+                            },
+                            {
+                                "base": "時刻",
+                                "reading": null
+                            },
+                            {
+                                "base": ")",
+                                "reading": null
+                            },
+                            {
+                                "base": ".",
+                                "reading": null
+                            }
+                        ]
+                    }
                 },
                 {
                     "text": "과거로부터 현재를 거쳐 미래로 끊임없이 흘러가는 것.",
                     "language": "KJC",
                     "examples": [
-                        "시간의 흐름",
-                        "그 후로 시간이 많이 흘렀다.",
-                        "시간은 기다려 주지 않는다."
-                    ]
+                        {
+                            "text": "시간의 흐름",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "시간의",
+                                        "reading": "sigan-ui"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "흐름",
+                                        "reading": "heuleum"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "그 후로 시간이 많이 흘렀다.",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "그",
+                                        "reading": "geu"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "후로",
+                                        "reading": "hulo"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "시간이",
+                                        "reading": "sigan-i"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "많이",
+                                        "reading": "manh-i"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "흘렀다",
+                                        "reading": "heulleossda"
+                                    },
+                                    {
+                                        "base": ".",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "시간은 기다려 주지 않는다.",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "시간은",
+                                        "reading": "sigan-eun"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "기다려",
+                                        "reading": "gidalyeo"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "주지",
+                                        "reading": "juji"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "않는다",
+                                        "reading": "anhneunda"
+                                    },
+                                    {
+                                        "base": ".",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "transcription": {
+                        "segments": [
+                            {
+                                "base": "과거로부터",
+                                "reading": "gwageolobuteo"
+                            },
+                            {
+                                "base": " ",
+                                "reading": null
+                            },
+                            {
+                                "base": "현재를",
+                                "reading": "hyeonjaeleul"
+                            },
+                            {
+                                "base": " ",
+                                "reading": null
+                            },
+                            {
+                                "base": "거쳐",
+                                "reading": "geochyeo"
+                            },
+                            {
+                                "base": " ",
+                                "reading": null
+                            },
+                            {
+                                "base": "미래로",
+                                "reading": "milaelo"
+                            },
+                            {
+                                "base": " ",
+                                "reading": null
+                            },
+                            {
+                                "base": "끊임없이",
+                                "reading": "kkeunh-im-eobs-i"
+                            },
+                            {
+                                "base": " ",
+                                "reading": null
+                            },
+                            {
+                                "base": "흘러가는",
+                                "reading": "heulleoganeun"
+                            },
+                            {
+                                "base": " ",
+                                "reading": null
+                            },
+                            {
+                                "base": "것",
+                                "reading": "geos"
+                            },
+                            {
+                                "base": ".",
+                                "reading": null
+                            }
+                        ]
+                    }
                 },
                 {
                     "text": "하루를 24로 나눈 길이. 60분 동안.",
                     "language": "KJ",
                     "examples": [
-                        "공항까지 두 시간 걸린다."
-                    ]
+                        {
+                            "text": "공항까지 두 시간 걸린다.",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "공항까지",
+                                        "reading": "gonghangkkaji"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "두",
+                                        "reading": "du"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "시간",
+                                        "reading": "sigan"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "걸린다",
+                                        "reading": "geollinda"
+                                    },
+                                    {
+                                        "base": ".",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "transcription": {
+                        "segments": [
+                            {
+                                "base": "하루를",
+                                "reading": "haluleul"
+                            },
+                            {
+                                "base": " ",
+                                "reading": null
+                            },
+                            {
+                                "base": "24로",
+                                "reading": "24lo"
+                            },
+                            {
+                                "base": " ",
+                                "reading": null
+                            },
+                            {
+                                "base": "나눈",
+                                "reading": "nanun"
+                            },
+                            {
+                                "base": " ",
+                                "reading": null
+                            },
+                            {
+                                "base": "길이",
+                                "reading": "gil-i"
+                            },
+                            {
+                                "base": ".",
+                                "reading": null
+                            },
+                            {
+                                "base": " ",
+                                "reading": null
+                            },
+                            {
+                                "base": "60분",
+                                "reading": "60bun"
+                            },
+                            {
+                                "base": " ",
+                                "reading": null
+                            },
+                            {
+                                "base": "동안",
+                                "reading": "dong-an"
+                            },
+                            {
+                                "base": ".",
+                                "reading": null
+                            }
+                        ]
+                    }
                 }
             ]
         }
@@ -139,10 +1611,112 @@
                     "text": "商品或服务价值的货币表现。",
                     "language": "CJK",
                     "examples": [
-                        "合理价格",
-                        "价格上涨",
-                        "普通的学生买不起价格太贵的商品。"
-                    ]
+                        {
+                            "text": "合理价格",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "合理",
+                                        "reading": "hélǐ"
+                                    },
+                                    {
+                                        "base": "价格",
+                                        "reading": "jiàgé"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "价格上涨",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "价格上涨",
+                                        "reading": "jiàgéshàngzhǎng"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "普通的学生买不起价格太贵的商品。",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "普通",
+                                        "reading": "pǔtōng"
+                                    },
+                                    {
+                                        "base": "的",
+                                        "reading": "de"
+                                    },
+                                    {
+                                        "base": "学生",
+                                        "reading": "xuéshēng"
+                                    },
+                                    {
+                                        "base": "买不起",
+                                        "reading": "mǎibùqǐ"
+                                    },
+                                    {
+                                        "base": "价格",
+                                        "reading": "jiàgé"
+                                    },
+                                    {
+                                        "base": "太贵",
+                                        "reading": "tàiguì"
+                                    },
+                                    {
+                                        "base": "的",
+                                        "reading": "de"
+                                    },
+                                    {
+                                        "base": "商品",
+                                        "reading": "shāngpǐn"
+                                    },
+                                    {
+                                        "base": "。",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "transcription": {
+                        "segments": [
+                            {
+                                "base": "商品",
+                                "reading": "shāngpǐn"
+                            },
+                            {
+                                "base": "或",
+                                "reading": "huò"
+                            },
+                            {
+                                "base": "服务",
+                                "reading": "fúwù"
+                            },
+                            {
+                                "base": "价值",
+                                "reading": "jiàzhí"
+                            },
+                            {
+                                "base": "的",
+                                "reading": "de"
+                            },
+                            {
+                                "base": "货币",
+                                "reading": "huòbì"
+                            },
+                            {
+                                "base": "表现",
+                                "reading": "biǎoxiàn"
+                            },
+                            {
+                                "base": "。",
+                                "reading": null
+                            }
+                        ]
+                    }
                 }
             ]
         },
@@ -156,11 +1730,173 @@
                     "text": "物事やサービスの価値をお金で表現したもの。",
                     "language": "JCK",
                     "examples": [
-                        "適正価格",
-                        "価格が上昇する",
-                        "普通の学生はそんなに 高価な/値段の高い/高い値段 のものは買えない。"
+                        {
+                            "text": "適正価格",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "適正価格",
+                                        "reading": "てきせいかかく"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "価格が上昇する",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "価格",
+                                        "reading": "かかく"
+                                    },
+                                    {
+                                        "base": "が",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "上昇",
+                                        "reading": "じょうしょう"
+                                    },
+                                    {
+                                        "base": "する",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "普通の学生はそんなに 高価な/値段の高い/高い値段 のものは買えない。",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "普通",
+                                        "reading": "ふつう"
+                                    },
+                                    {
+                                        "base": "の",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "学生",
+                                        "reading": "がくせい"
+                                    },
+                                    {
+                                        "base": "はそんなに",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "高価",
+                                        "reading": "こうか"
+                                    },
+                                    {
+                                        "base": "な",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "/",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "値段",
+                                        "reading": "ねだん"
+                                    },
+                                    {
+                                        "base": "の",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "高い",
+                                        "reading": "たかい"
+                                    },
+                                    {
+                                        "base": "/",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "高い",
+                                        "reading": "たかい"
+                                    },
+                                    {
+                                        "base": "値段",
+                                        "reading": "ねだん"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "のものは",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "買え",
+                                        "reading": "かえ"
+                                    },
+                                    {
+                                        "base": "ない",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "。",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        }
                     ],
-                    "synonym": "値段 ( ねだん )"
+                    "synonym": "値段 ( ねだん )",
+                    "transcription": {
+                        "segments": [
+                            {
+                                "base": "物事",
+                                "reading": "ものごと"
+                            },
+                            {
+                                "base": "や",
+                                "reading": null
+                            },
+                            {
+                                "base": "サービス",
+                                "reading": null
+                            },
+                            {
+                                "base": "の",
+                                "reading": null
+                            },
+                            {
+                                "base": "価値",
+                                "reading": "かち"
+                            },
+                            {
+                                "base": "をお",
+                                "reading": null
+                            },
+                            {
+                                "base": "金",
+                                "reading": "きん"
+                            },
+                            {
+                                "base": "で",
+                                "reading": null
+                            },
+                            {
+                                "base": "表現",
+                                "reading": "ひょうげん"
+                            },
+                            {
+                                "base": "したもの",
+                                "reading": null
+                            },
+                            {
+                                "base": "。",
+                                "reading": null
+                            }
+                        ]
+                    }
                 }
             ]
         },
@@ -174,10 +1910,176 @@
                     "text": "사물이나 서비스의 가치를 돈으로 나타낸 것.",
                     "language": "KJC",
                     "examples": [
-                        "적정 가격",
-                        "가격이 오르다",
-                        "보통의 학생은 그렇게 높은 가격의 물건을 살 수 없다."
-                    ]
+                        {
+                            "text": "적정 가격",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "적정",
+                                        "reading": "jeogjeong"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "가격",
+                                        "reading": "gagyeog"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "가격이 오르다",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "가격이",
+                                        "reading": "gagyeog-i"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "오르다",
+                                        "reading": "oleuda"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "text": "보통의 학생은 그렇게 높은 가격의 물건을 살 수 없다.",
+                            "transcription": {
+                                "segments": [
+                                    {
+                                        "base": "보통의",
+                                        "reading": "botong-ui"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "학생은",
+                                        "reading": "hagsaeng-eun"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "그렇게",
+                                        "reading": "geuleohge"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "높은",
+                                        "reading": "nop-eun"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "가격의",
+                                        "reading": "gagyeog-ui"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "물건을",
+                                        "reading": "mulgeon-eul"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "살",
+                                        "reading": "sal"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "수",
+                                        "reading": "su"
+                                    },
+                                    {
+                                        "base": " ",
+                                        "reading": null
+                                    },
+                                    {
+                                        "base": "없다",
+                                        "reading": "eobsda"
+                                    },
+                                    {
+                                        "base": ".",
+                                        "reading": null
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "transcription": {
+                        "segments": [
+                            {
+                                "base": "사물이나",
+                                "reading": "samul-ina"
+                            },
+                            {
+                                "base": " ",
+                                "reading": null
+                            },
+                            {
+                                "base": "서비스의",
+                                "reading": "seobiseu-ui"
+                            },
+                            {
+                                "base": " ",
+                                "reading": null
+                            },
+                            {
+                                "base": "가치를",
+                                "reading": "gachileul"
+                            },
+                            {
+                                "base": " ",
+                                "reading": null
+                            },
+                            {
+                                "base": "돈으로",
+                                "reading": "don-eulo"
+                            },
+                            {
+                                "base": " ",
+                                "reading": null
+                            },
+                            {
+                                "base": "나타낸",
+                                "reading": "natanaen"
+                            },
+                            {
+                                "base": " ",
+                                "reading": null
+                            },
+                            {
+                                "base": "것",
+                                "reading": "geos"
+                            },
+                            {
+                                "base": ".",
+                                "reading": null
+                            }
+                        ]
+                    }
                 }
             ]
         }

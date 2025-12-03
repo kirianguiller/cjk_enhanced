@@ -1,5 +1,5 @@
 <script setup>
-import { computed } from 'vue'
+import { ref, watch } from 'vue'
 
 const props = defineProps({
   item: {
@@ -13,56 +13,26 @@ const props = defineProps({
   searchQuery: {
     type: String,
     default: ''
+  },
+  showPinyin: {
+    type: Boolean,
+    default: true
+  },
+  showFurigana: {
+    type: Boolean,
+    default: true
   }
 })
 
-// Helper to get the definition object for the current language preference
-// The data structure has definitions inside each language object.
-// We need to decide which "definition" to show.
-// The requirement says "see the definition in the language that is clicked on top".
-// This implies we show the definition text FROM the selected language's entry.
-// E.g. if 'Chinese' is selected, we show `item.chinese.definitions[0].text`.
 
-// However, the screenshot shows 3 columns for examples, but a single definition row?
-// Actually, the screenshot shows:
-// 1. Header: Time [shijian] | Time [jikan] | Time [sigan]
-// 2. Definition: "有起点和终点的一段时间。" (Chinese definition)
-//    And on the right, toggles [C] [J] [K].
-//    So the definition row displays ONE definition at a time, toggleable.
-// 3. Examples: 3 columns (Chinese, Japanese, Korean).
-
-const currentDefinition = computed(() => {
-  // Default to Chinese if not specified or fallback
-  // The definitionLanguage prop controls this.
-  // 'C' -> item.chinese
-  // 'J' -> item.japanese
-  // 'K' -> item.korean
-  
-  // Note: The data has an array of definitions. We'll assume we show the first one for now,
-  // or we need to handle multiple definitions.
-  // The screenshot shows "1. ...", "2. ...".
-  // So the component might be rendering a SINGLE definition entry (one meaning), not the whole word entry?
-  // Wait, the screenshot shows "1. ..." and "2. ...". These look like separate cards or separate sections within a card.
-  // Let's assume the `item` prop passed here represents ONE meaning (one definition group).
-  // BUT the JSON structure is hierarchical: Word -> Definitions.
-  // If we want to match the screenshot, we might need to flatten the data or iterate over definitions.
-  // Let's assume the parent component iterates over definitions and passes a "Merged Definition Object" 
-  // OR this component handles the whole word and iterates definitions itself.
-  // Screenshot shows "1. ..." then "2. ...". This suggests the Card is the WORD, and it lists definitions.
-  
-  return props.item
-})
 
 // We need a local state for the definition language if we want to toggle it per row?
 // Or is it global? "language that is clicked on top" might mean global.
 // But the screenshot has [C][J][K] buttons on the definition row.
 // Let's make it controllable via prop but also emit events or have local override.
 // For now, let's use a local state initialized from prop, or just use the prop if it's global.
-// The user said "language that is clicked on top", maybe referring to the header?
-// But the screenshot shows buttons on the definition line.
 // Let's implement local toggle for the definition line.
 
-import { ref, watch } from 'vue'
 const localDefLang = ref(props.definitionLanguage || 'C')
 
 watch(() => props.definitionLanguage, (newVal) => {
@@ -73,7 +43,7 @@ const setLang = (lang) => {
   localDefLang.value = lang
 }
 
-const getDefinitionText = (defIndex) => {
+const getDefinitionData = (defIndex) => {
   const langKey = {
     'C': 'chinese',
     'J': 'japanese',
@@ -89,12 +59,12 @@ const getDefinitionText = (defIndex) => {
   
   const defs = props.item[langKey]?.definitions
   if (defs && defs[defIndex]) {
-    return defs[defIndex].text
+    return defs[defIndex]
   }
-  return ''
+  return null
 }
 
-const getExamples = (langCode, defIndex) => {
+const getExampleData = (langCode, defIndex, exIndex) => {
     const langKey = {
     'C': 'chinese',
     'J': 'japanese',
@@ -102,10 +72,10 @@ const getExamples = (langCode, defIndex) => {
   }[langCode]
   
   const defs = props.item[langKey]?.definitions
-  if (defs && defs[defIndex]) {
-    return defs[defIndex].examples || []
+  if (defs && defs[defIndex] && defs[defIndex].examples) {
+    return defs[defIndex].examples[exIndex]
   }
-  return []
+  return null
 }
 
 const highlight = (text) => {
@@ -121,6 +91,28 @@ const highlight = (text) => {
   
   return text.replace(regex, '<span class="highlight">$1</span>')
 }
+
+const renderText = (dataObj, lang) => {
+  if (!dataObj) return ''
+  
+  const showPronunciation = (lang === 'C' && props.showPinyin) || (lang === 'J' && props.showFurigana)
+  
+  if (!showPronunciation || !dataObj.transcription || !dataObj.transcription.segments) {
+    return highlight(dataObj.text)
+  }
+  
+  // Render segments with Ruby tags
+  return dataObj.transcription.segments.map(seg => {
+    const base = highlight(seg.base)
+    if (seg.reading) {
+      return `<ruby>${base}<rt>${seg.reading}</rt></ruby>`
+    }
+    return base
+  }).join('')
+}
+
+
+
 
 </script>
 
@@ -148,7 +140,7 @@ const highlight = (text) => {
       <div class="definition-row" :class="['bg-' + localDefLang]">
         <div class="def-text">
           <span class="index">{{ index + 1 }}.</span>
-          <span v-html="highlight(getDefinitionText(index))"></span>
+          <span v-html="renderText(getDefinitionData(index), localDefLang)"></span>
         </div>
         <div class="lang-toggles">
           <button @click="setLang('C')" :class="{ active: localDefLang === 'C' }" class="btn-c">C</button>
@@ -160,18 +152,18 @@ const highlight = (text) => {
       <!-- Examples Row -->
       <div class="examples-row">
         <div class="ex-col chinese">
-          <div v-for="(ex, i) in getExamples('C', index)" :key="i" class="example">
-            <span class="ex-index">①</span> <span v-html="highlight(ex)"></span>
+          <div v-for="(ex, i) in getDefinitionData(index)?.examples" :key="i" class="example">
+            <span class="ex-index">①</span> <span v-html="renderText(getExampleData('C', index, i), 'C')"></span>
           </div>
         </div>
         <div class="ex-col japanese">
-          <div v-for="(ex, i) in getExamples('J', index)" :key="i" class="example">
-            <span class="ex-index">①</span> <span v-html="highlight(ex)"></span>
+          <div v-for="(ex, i) in getDefinitionData(index)?.examples" :key="i" class="example">
+            <span class="ex-index">①</span> <span v-html="renderText(getExampleData('J', index, i), 'J')"></span>
           </div>
         </div>
         <div class="ex-col korean">
-          <div v-for="(ex, i) in getExamples('K', index)" :key="i" class="example">
-            <span class="ex-index">①</span> <span v-html="highlight(ex)"></span>
+          <div v-for="(ex, i) in getDefinitionData(index)?.examples" :key="i" class="example">
+            <span class="ex-index">①</span> <span v-html="renderText(getExampleData('K', index, i), 'K')"></span>
           </div>
         </div>
       </div>

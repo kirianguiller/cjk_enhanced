@@ -11,6 +11,14 @@ const props = defineProps({
   globalDefLang: {
     type: String,
     default: 'CJK'
+  },
+  showPinyin: {
+    type: Boolean,
+    default: true
+  },
+  showFurigana: {
+    type: Boolean,
+    default: true
   }
 })
 
@@ -33,7 +41,7 @@ const filteredList = computed(() => {
     const checkDefs = (langObj) => {
       return langObj.definitions.some(def => 
         def.text.toLowerCase().includes(query) ||
-        (def.examples && def.examples.some(ex => ex.toLowerCase().includes(query)))
+        (def.examples && def.examples.some(ex => ex.text.toLowerCase().includes(query)))
       )
     }
 
@@ -54,6 +62,8 @@ const filteredList = computed(() => {
       :item="item"
       :definition-language="globalDefLang"
       :search-query="searchQuery"
+      :show-pinyin="showPinyin"
+      :show-furigana="showFurigana"
     />
     <div v-if="filteredList.length === 0" class="no-results">
       No results found for "{{ searchQuery }}"

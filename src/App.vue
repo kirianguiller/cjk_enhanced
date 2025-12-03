@@ -4,6 +4,8 @@ import VocabList from './components/VocabList.vue'
 
 const searchQuery = ref('')
 const globalDefLang = ref('C') // Default to Chinese definitions
+const showPinyin = ref(true)
+const showFurigana = ref(true)
 
 const setGlobalLang = (lang) => {
   globalDefLang.value = lang
@@ -22,6 +24,10 @@ const setGlobalLang = (lang) => {
         />
       </div>
       <div class="header-controls">
+        <div class="toggles">
+          <label><input type="checkbox" v-model="showPinyin"> Pinyin</label>
+          <label><input type="checkbox" v-model="showFurigana"> Furigana</label>
+        </div>
         <!-- Global Language Toggles (Flags or Buttons) -->
         <!-- Screenshot shows flags on the right: China, Japan, Korea -->
         <button @click="setGlobalLang('C')" :class="{ active: globalDefLang === 'C' }" title="Chinese Definitions">🇨🇳</button>
@@ -32,7 +38,12 @@ const setGlobalLang = (lang) => {
 
     <main>
       <div class="container">
-        <VocabList :search-query="searchQuery" :global-def-lang="globalDefLang" />
+        <VocabList 
+          :search-query="searchQuery" 
+          :global-def-lang="globalDefLang"
+          :show-pinyin="showPinyin"
+          :show-furigana="showFurigana"
+        />
       </div>
     </main>
   </div>
@@ -69,6 +80,25 @@ const setGlobalLang = (lang) => {
   border-radius: 4px;
   border: none;
   font-size: 1em;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+}
+
+.toggles {
+  display: flex;
+  gap: 10px;
+  margin-right: 20px;
+  font-size: 0.9em;
+}
+
+.toggles label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .header-controls button {
