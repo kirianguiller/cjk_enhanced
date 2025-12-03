@@ -43,6 +43,7 @@ const props = defineProps({
 // Let's implement local toggle for the definition line.
 
 const localDefLang = ref(props.definitionLanguage || 'C')
+const hoveredTree = ref(null)
 
 watch(() => props.definitionLanguage, (newVal) => {
   localDefLang.value = newVal
@@ -165,19 +166,46 @@ const renderText = (dataObj, lang) => {
         <div class="ex-col chinese">
           <div v-for="(ex, i) in getDefinitionData(index)?.examples" :key="i" class="example">
             <span class="ex-index">①</span> <span v-html="renderText(getExampleData('C', index, i), 'C')"></span>
-            <DepTree v-if="showDepTree && getExampleData('C', index, i)?.conllu" :conll="getExampleData('C', index, i).conllu" />
+            
+            <!-- Tree Icon & Tooltip -->
+            <div v-if="showDepTree && getExampleData('C', index, i)?.conllu" class="tree-trigger"
+                 @mouseenter="hoveredTree = `C-${index}-${i}`"
+                 @mouseleave="hoveredTree = null">
+              <span class="tree-icon">🌳</span>
+              <div v-if="hoveredTree === `C-${index}-${i}`" class="tree-tooltip">
+                <DepTree :conll="getExampleData('C', index, i).conllu" />
+              </div>
+            </div>
           </div>
         </div>
         <div class="ex-col japanese">
           <div v-for="(ex, i) in getDefinitionData(index)?.examples" :key="i" class="example">
             <span class="ex-index">①</span> <span v-html="renderText(getExampleData('J', index, i), 'J')"></span>
-            <DepTree v-if="showDepTree && getExampleData('J', index, i)?.conllu" :conll="getExampleData('J', index, i).conllu" />
+            
+            <!-- Tree Icon & Tooltip -->
+            <div v-if="showDepTree && getExampleData('J', index, i)?.conllu" class="tree-trigger"
+                 @mouseenter="hoveredTree = `J-${index}-${i}`"
+                 @mouseleave="hoveredTree = null">
+              <span class="tree-icon">🌳</span>
+              <div v-if="hoveredTree === `J-${index}-${i}`" class="tree-tooltip">
+                <DepTree :conll="getExampleData('J', index, i).conllu" />
+              </div>
+            </div>
           </div>
         </div>
         <div class="ex-col korean">
           <div v-for="(ex, i) in getDefinitionData(index)?.examples" :key="i" class="example">
             <span class="ex-index">①</span> <span v-html="renderText(getExampleData('K', index, i), 'K')"></span>
-            <DepTree v-if="showDepTree && getExampleData('K', index, i)?.conllu" :conll="getExampleData('K', index, i).conllu" />
+            
+            <!-- Tree Icon & Tooltip -->
+            <div v-if="showDepTree && getExampleData('K', index, i)?.conllu" class="tree-trigger"
+                 @mouseenter="hoveredTree = `K-${index}-${i}`"
+                 @mouseleave="hoveredTree = null">
+              <span class="tree-icon">🌳</span>
+              <div v-if="hoveredTree === `K-${index}-${i}`" class="tree-tooltip">
+                <DepTree :conll="getExampleData('K', index, i).conllu" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -278,5 +306,32 @@ ruby {
 rt {
   font-size: 0.6em;
   color: #666;
+}
+
+.tree-trigger {
+  display: inline-block;
+  position: relative;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.tree-icon {
+  font-size: 1.2em;
+}
+
+.tree-tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+  width: 400px; /* Adjust as needed */
+  max-width: 90vw;
+  overflow-x: auto;
 }
 </style>
