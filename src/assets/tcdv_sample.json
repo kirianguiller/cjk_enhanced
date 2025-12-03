@@ -23,7 +23,8 @@
                                         "reading": "shíjiān"
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t工作\t工作\tNOUN\tNN\t_\t2\tnmod\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\t时间\t时间\tNOUN\tNN\t_\t0\troot\t_\tSpaceAfter=No|start_char=2|end_char=4"
                         },
                         {
                             "text": "那项工作要花费很多时间。",
@@ -58,7 +59,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t那\t那\tDET\tDT\t_\t2\tdet\t_\tSpaceAfter=No|start_char=0|end_char=1\n2\t项\t项\tNOUN\tNNB\t_\t3\tclf\t_\tSpaceAfter=No|start_char=1|end_char=2\n3\t工作\t工作\tNOUN\tNN\t_\t5\tnsubj\t_\tSpaceAfter=No|start_char=2|end_char=4\n4\t要\t要\tAUX\tMD\t_\t5\taux\t_\tSpaceAfter=No|start_char=4|end_char=5\n5\t花费\t花费\tVERB\tVV\t_\t0\troot\t_\tSpaceAfter=No|start_char=5|end_char=7\n6\t很多\t很多\tNUM\tCD\tNumType=Card\t7\tnummod\t_\tSpaceAfter=No|start_char=7|end_char=9\n7\t时间\t时间\tNOUN\tNN\t_\t5\tobj\t_\tSpaceAfter=No|start_char=9|end_char=11\n8\t。\t。\tPUNCT\t.\t_\t5\tpunct\t_\tSpaceAfter=No|start_char=11|end_char=12"
                         },
                         {
                             "text": "地球自转一周的时间是二十四小时。",
@@ -101,7 +103,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t地球\t地球\tPROPN\tNNP\t_\t2\tnsubj\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\t自转\t自转\tVERB\tVV\t_\t6\tacl:relcl\t_\tSpaceAfter=No|start_char=2|end_char=4\n3\t一\t一\tNUM\tCD\tNumType=Card\t4\tnummod\t_\tSpaceAfter=No|start_char=4|end_char=5\n4\t周\t周\tNOUN\tNNB\t_\t2\tobj\t_\tSpaceAfter=No|start_char=5|end_char=6\n5\t的\t的\tSCONJ\tDEC\t_\t2\tmark:rel\t_\tSpaceAfter=No|start_char=6|end_char=7\n6\t时间\t时间\tNOUN\tNN\t_\t9\tnsubj\t_\tSpaceAfter=No|start_char=7|end_char=9\n7\t是\t是\tAUX\tVC\t_\t9\tcop\t_\tSpaceAfter=No|start_char=9|end_char=10\n8\t二十四\t二十四\tNUM\tCD\tNumType=Card\t9\tnummod\t_\tSpaceAfter=No|start_char=10|end_char=13\n9\t小时\t小时\tNOUN\tNNB\t_\t0\troot\t_\tSpaceAfter=No|start_char=13|end_char=15\n10\t。\t。\tPUNCT\t.\t_\t9\tpunct\t_\tSpaceAfter=No|start_char=15|end_char=16"
                         }
                     ],
                     "transcription": {
@@ -135,7 +138,8 @@
                                 "reading": null
                             }
                         ]
-                    }
+                    },
+                    "conllu": "1\t有\t有\tVERB\tVV\t_\t0\troot\t_\tSpaceAfter=No|start_char=0|end_char=1\n2\t起点\t起点\tNOUN\tNN\t_\t8\tnmod\t_\tSpaceAfter=No|start_char=1|end_char=3\n3\t和\t和\tCCONJ\tCC\t_\t4\tcc\t_\tSpaceAfter=No|start_char=3|end_char=4\n4\t终点\t终点\tNOUN\tNN\t_\t2\tconj\t_\tSpaceAfter=No|start_char=4|end_char=6\n5\t的\t的\tPART\tDEC\tCase=Gen\t2\tcase\t_\tSpaceAfter=No|start_char=6|end_char=7\n6\t一\t一\tNUM\tCD\tNumType=Card\t8\tnummod\t_\tSpaceAfter=No|start_char=7|end_char=8\n7\t段\t段\tNOUN\tNNB\t_\t6\tclf\t_\tSpaceAfter=No|start_char=8|end_char=9\n8\t时间\t时间\tNOUN\tNN\t_\t1\tobj\t_\tSpaceAfter=No|start_char=9|end_char=11\n9\t。\t。\tPUNCT\t.\t_\t1\tpunct\t_\tSpaceAfter=No|start_char=11|end_char=12"
                 },
                 {
                     "text": "时刻。",
@@ -178,7 +182,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t请\t请\tVERB\tMD\t_\t0\troot\t_\tSpaceAfter=No|start_char=0|end_char=1\n2\t告诉\t告诉\tVERB\tVV\t_\t1\txcomp\t_\tSpaceAfter=No|start_char=1|end_char=3\n3\t我\t我\tPRON\tPRP\tPerson=1\t7\tnmod\t_\tSpaceAfter=No|start_char=3|end_char=4\n4\t飞机\t飞机\tNOUN\tNN\t_\t3\tappos\t_\tSpaceAfter=No|start_char=4|end_char=6\n5\t的\t的\tPART\tDEC\tCase=Gen\t4\tcase\t_\tSpaceAfter=No|start_char=6|end_char=7\n6\t着陆\t着陆\tNOUN\tNN\t_\t7\tnmod\t_\tSpaceAfter=No|start_char=7|end_char=9\n7\t时间\t时间\tNOUN\tNN\t_\t2\tobj\t_\tSpaceAfter=No|start_char=9|end_char=11\n8\t。\t。\tPUNCT\t.\t_\t1\tpunct\t_\tSpaceAfter=No|start_char=11|end_char=12"
                         },
                         {
                             "text": "比约定的时间晚到了一会儿。",
@@ -217,7 +222,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t比\t比\tADP\tIN\t_\t4\tcase\t_\tSpaceAfter=No|start_char=0|end_char=1\n2\t约定\t约定\tVERB\tVV\t_\t4\tacl:relcl\t_\tSpaceAfter=No|start_char=1|end_char=3\n3\t的\t的\tSCONJ\tDEC\t_\t2\tmark:rel\t_\tSpaceAfter=No|start_char=3|end_char=4\n4\t时间\t时间\tNOUN\tNN\t_\t5\tnsubj\t_\tSpaceAfter=No|start_char=4|end_char=6\n5\t晚到\t晚到\tVERB\tVV\t_\t0\troot\t_\tSpaceAfter=No|start_char=6|end_char=8\n6\t了\t了\tAUX\tAS\tAspect=Perf\t5\taux\t_\tSpaceAfter=No|start_char=8|end_char=9\n7\t一\t一\tNUM\tCD\tNumType=Card\t8\tnummod\t_\tSpaceAfter=No|start_char=9|end_char=10\n8\t会儿\t会儿\tNOUN\tNN\t_\t5\tobj\t_\tSpaceAfter=No|start_char=10|end_char=12\n9\t。\t。\tPUNCT\t.\t_\t5\tpunct\t_\tSpaceAfter=No|start_char=12|end_char=13"
                         },
                         {
                             "text": "现在是三点十五分。",
@@ -244,7 +250,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t现在\t现在\tNOUN\tNN\t_\t6\tnmod:tmod\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\t是\t是\tAUX\tVC\t_\t6\tcop\t_\tSpaceAfter=No|start_char=2|end_char=3\n3\t三\t三\tNUM\tCD\tNumType=Card\t4\tnummod\t_\tSpaceAfter=No|start_char=3|end_char=4\n4\t点\t点\tNOUN\tNN\t_\t6\tnmod\t_\tSpaceAfter=No|start_char=4|end_char=5\n5\t十五\t十五\tNUM\tCD\tNumType=Card\t6\tnummod\t_\tSpaceAfter=No|start_char=5|end_char=7\n6\t分\t分\tNOUN\tNNB\t_\t0\troot\t_\tSpaceAfter=No|start_char=7|end_char=8\n7\t。\t。\tPUNCT\t.\t_\t6\tpunct\t_\tSpaceAfter=No|start_char=8|end_char=9"
                         }
                     ],
                     "transcription": {
@@ -258,7 +265,8 @@
                                 "reading": null
                             }
                         ]
-                    }
+                    },
+                    "conllu": "1\t时刻\t时刻\tNOUN\tNN\t_\t0\troot\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\t。\t。\tPUNCT\t.\t_\t1\tpunct\t_\tSpaceAfter=No|start_char=2|end_char=3"
                 },
                 {
                     "text": "由过去、现在和将来构成的连续不断的系统。",
@@ -281,7 +289,8 @@
                                         "reading": "liúshì"
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t时间\t时间\tNOUN\tNN\t_\t3\tnmod\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\t的\t的\tPART\tDEC\tCase=Gen\t1\tcase\t_\tSpaceAfter=No|start_char=2|end_char=3\n3\t流逝\t流逝\tNOUN\tNN\t_\t0\troot\t_\tSpaceAfter=No|start_char=3|end_char=5"
                         },
                         {
                             "text": "从那之后过了很长时间。",
@@ -312,7 +321,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t从那\t从那\tDET\tDT\t_\t3\tnsubj\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\t之后\t之后\tADP\tIN\t_\t1\tcase\t_\tSpaceAfter=No|start_char=2|end_char=4\n3\t过\t过\tVERB\tVV\t_\t0\troot\t_\tSpaceAfter=No|start_char=4|end_char=5\n4\t了\t了\tAUX\tAS\tAspect=Perf\t3\taux\t_\tSpaceAfter=No|start_char=5|end_char=6\n5\t很长\t很长\tADJ\tJJ\t_\t6\tamod\t_\tSpaceAfter=No|start_char=6|end_char=8\n6\t时间\t时间\tNOUN\tNN\t_\t3\tobj\t_\tSpaceAfter=No|start_char=8|end_char=10\n7\t。\t。\tPUNCT\t.\t_\t3\tpunct\t_\tSpaceAfter=No|start_char=10|end_char=11"
                         },
                         {
                             "text": "时间不等人。",
@@ -339,7 +349,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t时间\t时间\tNOUN\tNN\t_\t2\tnsubj\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\t不等\t等\tVERB\tVV\tPolarity=Neg\t0\troot\t_\tSpaceAfter=No|start_char=2|end_char=4\n3\t人\t人\tNOUN\tNN\t_\t2\tobj\t_\tSpaceAfter=No|start_char=4|end_char=5\n4\t。\t。\tPUNCT\t.\t_\t2\tpunct\t_\tSpaceAfter=No|start_char=5|end_char=6"
                         }
                     ],
                     "transcription": {
@@ -393,7 +404,8 @@
                                 "reading": null
                             }
                         ]
-                    }
+                    },
+                    "conllu": "1\t由\t由\tADP\tIN\t_\t2\tcase\t_\tSpaceAfter=No|start_char=0|end_char=1\n2\t过去\t过去\tNOUN\tNN\t_\t7\tobl\t_\tSpaceAfter=No|start_char=1|end_char=3\n3\t、\t、\tPUNCT\tEC\t_\t4\tpunct\t_\tSpaceAfter=No|start_char=3|end_char=4\n4\t现在\t现在\tNOUN\tNN\t_\t2\tconj\t_\tSpaceAfter=No|start_char=4|end_char=6\n5\t和\t和\tCCONJ\tCC\t_\t6\tcc\t_\tSpaceAfter=No|start_char=6|end_char=7\n6\t将来\t将来\tNOUN\tNN\t_\t4\tconj\t_\tSpaceAfter=No|start_char=7|end_char=9\n7\t构成\t构成\tVERB\tVV\t_\t12\tacl:relcl\t_\tSpaceAfter=No|start_char=9|end_char=11\n8\t的\t的\tSCONJ\tDEC\t_\t7\tmark:rel\t_\tSpaceAfter=No|start_char=11|end_char=12\n9\t连续\t连续\tADV\tRB\t_\t10\tadvmod\t_\tSpaceAfter=No|start_char=12|end_char=14\n10\t不断\t不断\tADJ\tJJ\t_\t12\tamod\t_\tSpaceAfter=No|start_char=14|end_char=16\n11\t的\t的\tSCONJ\tDEC\t_\t10\tmark:rel\t_\tSpaceAfter=No|start_char=16|end_char=17\n12\t系统\t系统\tNOUN\tNN\t_\t0\troot\t_\tSpaceAfter=No|start_char=17|end_char=19\n13\t。\t。\tPUNCT\t.\t_\t12\tpunct\t_\tSpaceAfter=No|start_char=19|end_char=20"
                 },
                 {
                     "text": "一天的二十四分之一，六十分钟。",
@@ -436,7 +448,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t〔到\t〔到\tVERB\tVV\t_\t3\tadvcl\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\t机场\t机场\tNOUN\tNN\t_\t1\tobj\t_\tSpaceAfter=No|start_char=2|end_char=4\n3\t需要\t需要\tVERB\tVV\t_\t0\troot\t_\tSpaceAfter=No|start_char=4|end_char=6\n4\t两\t两\tNUM\tCD\tNumType=Card\t6\tnummod\t_\tSpaceAfter=No|start_char=6|end_char=7\n5\t个\t个\tNOUN\tNNB\t_\t4\tclf\t_\tSpaceAfter=No|start_char=7|end_char=8\n6\t小时\t小时\tNOUN\tNN\t_\t3\tobj\t_\tSpaceAfter=No|start_char=8|end_char=10\n7\t。\t。\tPUNCT\t.\t_\t3\tpunct\t_\tSpaceAfter=No|start_char=10|end_char=11\n8\t〕\t〕\tPUNCT\t)\t_\t3\tpunct\t_\tSpaceAfter=No|start_char=11|end_char=12"
                         }
                     ],
                     "alternative": "小时(xiǎo shí)",
@@ -475,7 +488,8 @@
                                 "reading": null
                             }
                         ]
-                    }
+                    },
+                    "conllu": "1\t一\t一\tNUM\tCD\tNumType=Card\t2\tnummod\t_\tSpaceAfter=No|start_char=0|end_char=1\n2\t天\t天\tNOUN\tNNB\t_\t5\tnmod\t_\tSpaceAfter=No|start_char=1|end_char=2\n3\t的\t的\tPART\tDEC\tCase=Gen\t2\tcase\t_\tSpaceAfter=No|start_char=2|end_char=3\n4\t二十\t二十\tNUM\tCD\tNumType=Card\t5\tnummod\t_\tSpaceAfter=No|start_char=3|end_char=5\n5\t四分之一\t四分之一\tNUM\tCD\tNumType=Card\t0\troot\t_\tSpaceAfter=No|start_char=5|end_char=9\n6\t，\t，\tPUNCT\t,\t_\t8\tpunct\t_\tSpaceAfter=No|start_char=9|end_char=10\n7\t六十\t六十\tNUM\tCD\tNumType=Card\t8\tnummod\t_\tSpaceAfter=No|start_char=10|end_char=12\n8\t分钟\t分钟\tNOUN\tNNB\t_\t5\tparataxis\t_\tSpaceAfter=No|start_char=12|end_char=14\n9\t。\t。\tPUNCT\t.\t_\t8\tpunct\t_\tSpaceAfter=No|start_char=14|end_char=15"
                 }
             ]
         },
@@ -498,7 +512,8 @@
                                         "reading": "きんむじかん"
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t勤務\t勤務\tNOUN\t名詞-普通名詞-サ変可能\t_\t2\tcompound\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\t時間\t時間\tNOUN\t名詞-普通名詞-助数詞可能\t_\t0\troot\t_\tSpaceAfter=No|start_char=2|end_char=4"
                         },
                         {
                             "text": "その仕事には時間がかかる。",
@@ -529,7 +544,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\tその\t其の\tDET\t連体詞\t_\t2\tdet\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\t仕事\t仕事\tNOUN\t名詞-普通名詞-サ変可能\t_\t7\tobl\t_\tSpaceAfter=No|start_char=2|end_char=4\n3\tに\tに\tADP\t助詞-格助詞\t_\t2\tcase\t_\tSpaceAfter=No|start_char=4|end_char=5\n4\tは\tは\tADP\t助詞-係助詞\t_\t2\tcase\t_\tSpaceAfter=No|start_char=5|end_char=6\n5\t時間\t時間\tNOUN\t名詞-普通名詞-助数詞可能\t_\t7\tnsubj\t_\tSpaceAfter=No|start_char=6|end_char=8\n6\tが\tが\tADP\t助詞-格助詞\t_\t5\tcase\t_\tSpaceAfter=No|start_char=8|end_char=9\n7\tかかる\t掛かる\tVERB\t動詞-非自立可能-五段-ラ行\t_\t0\troot\t_\tSpaceAfter=No|start_char=9|end_char=12\n8\t。\t。\tPUNCT\t補助記号-句点\t_\t7\tpunct\t_\tSpaceAfter=No|start_char=12|end_char=13"
                         },
                         {
                             "text": "地球が一周自転するのにかかる時間は24時間だ。",
@@ -580,7 +596,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t地球\t地球\tNOUN\t名詞-普通名詞-一般\t_\t5\tnsubj\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\tが\tが\tADP\t助詞-格助詞\t_\t1\tcase\t_\tSpaceAfter=No|start_char=2|end_char=3\n3\t一\t一\tNUM\t名詞-数詞\t_\t4\tnummod\t_\tSpaceAfter=No|start_char=3|end_char=4\n4\t周\t周\tNOUN\t名詞-普通名詞-助数詞可能\t_\t5\tobl\t_\tSpaceAfter=No|start_char=4|end_char=5\n5\t自転\t自転\tVERB\t名詞-普通名詞-サ変可能\t_\t9\tadvcl\t_\tSpaceAfter=No|start_char=5|end_char=7\n6\tする\t為る\tAUX\t動詞-非自立可能-サ行変格\t_\t5\taux\t_\tSpaceAfter=No|start_char=7|end_char=9\n7\tの\tの\tSCONJ\t助詞-準体助詞\t_\t5\tmark\t_\tSpaceAfter=No|start_char=9|end_char=10\n8\tに\tに\tADP\t助詞-格助詞\t_\t5\tcase\t_\tSpaceAfter=No|start_char=10|end_char=11\n9\tかかる\t掛かる\tVERB\t動詞-非自立可能-五段-ラ行\t_\t10\tacl\t_\tSpaceAfter=No|start_char=11|end_char=14\n10\t時間\t時間\tNOUN\t名詞-普通名詞-助数詞可能\t_\t13\tnsubj\t_\tSpaceAfter=No|start_char=14|end_char=16\n11\tは\tは\tADP\t助詞-係助詞\t_\t10\tcase\t_\tSpaceAfter=No|start_char=16|end_char=17\n12\t24\t24\tNUM\t名詞-数詞\t_\t13\tnummod\t_\tSpaceAfter=No|start_char=17|end_char=19\n13\t時間\t時間\tNOUN\t名詞-普通名詞-助数詞可能\t_\t0\troot\t_\tSpaceAfter=No|start_char=19|end_char=21\n14\tだ\tだ\tAUX\t助動詞-助動詞-ダ\t_\t13\tcop\t_\tSpaceAfter=No|start_char=21|end_char=22\n15\t。\t。\tPUNCT\t補助記号-句点\t_\t13\tpunct\t_\tSpaceAfter=No|start_char=22|end_char=23"
                         }
                     ],
                     "transcription": {
@@ -614,7 +631,8 @@
                                 "reading": null
                             }
                         ]
-                    }
+                    },
+                    "conllu": "1\tある\t或る\tDET\t連体詞\t_\t2\tdet\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\t時刻\t時刻\tNOUN\t名詞-普通名詞-副詞可能\t_\t8\tnmod\t_\tSpaceAfter=No|start_char=2|end_char=4\n3\tから\tから\tADP\t助詞-格助詞\t_\t2\tcase\t_\tSpaceAfter=No|start_char=4|end_char=6\n4\tある\t或る\tDET\t連体詞\t_\t5\tdet\t_\tSpaceAfter=No|start_char=6|end_char=8\n5\t時刻\t時刻\tNOUN\t名詞-普通名詞-副詞可能\t_\t8\tnmod\t_\tSpaceAfter=No|start_char=8|end_char=10\n6\tまで\tまで\tADP\t助詞-副助詞\t_\t5\tcase\t_\tSpaceAfter=No|start_char=10|end_char=12\n7\tの\tの\tADP\t助詞-格助詞\t_\t5\tcase\t_\tSpaceAfter=No|start_char=12|end_char=13\n8\t間\t間\tNOUN\t名詞-普通名詞-副詞可能\t_\t0\troot\t_\tSpaceAfter=No|start_char=13|end_char=14\n9\t。\t。\tPUNCT\t補助記号-句点\t_\t8\tpunct\t_\tSpaceAfter=No|start_char=14|end_char=15"
                 },
                 {
                     "text": "時刻。",
@@ -653,7 +671,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t飛行\t飛行\tNOUN\t名詞-普通名詞-サ変可能\t_\t2\tcompound\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\t機\t機\tNOUN\t名詞-普通名詞-助数詞可能\t_\t5\tnmod\t_\tSpaceAfter=No|start_char=2|end_char=3\n3\tの\tの\tADP\t助詞-格助詞\t_\t2\tcase\t_\tSpaceAfter=No|start_char=3|end_char=4\n4\t到着\t到着\tNOUN\t名詞-普通名詞-サ変可能\t_\t5\tcompound\t_\tSpaceAfter=No|start_char=4|end_char=6\n5\t時間\t時間\tNOUN\t名詞-普通名詞-助数詞可能\t_\t7\tobj\t_\tSpaceAfter=No|start_char=6|end_char=8\n6\tを\tを\tADP\t助詞-格助詞\t_\t5\tcase\t_\tSpaceAfter=No|start_char=8|end_char=9\n7\t教え\t教える\tVERB\t動詞-一般-下一段-ア行\t_\t0\troot\t_\tSpaceAfter=No|start_char=9|end_char=11\n8\tて\tて\tSCONJ\t助詞-接続助詞\t_\t7\tmark\t_\tSpaceAfter=No|start_char=11|end_char=12\n9\tください\t下さる\tAUX\t動詞-非自立可能-五段-ラ行\t_\t8\tfixed\t_\tSpaceAfter=No|start_char=12|end_char=16\n10\t。\t。\tPUNCT\t補助記号-句点\t_\t7\tpunct\t_\tSpaceAfter=No|start_char=16|end_char=17"
                         },
                         {
                             "text": "約束の時間に遅れた。",
@@ -688,7 +707,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t約束\t約束\tNOUN\t名詞-普通名詞-サ変可能\t_\t3\tnmod\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\tの\tの\tADP\t助詞-格助詞\t_\t1\tcase\t_\tSpaceAfter=No|start_char=2|end_char=3\n3\t時間\t時間\tNOUN\t名詞-普通名詞-助数詞可能\t_\t5\tobl\t_\tSpaceAfter=No|start_char=3|end_char=5\n4\tに\tに\tADP\t助詞-格助詞\t_\t3\tcase\t_\tSpaceAfter=No|start_char=5|end_char=6\n5\t遅れ\t遅れる\tVERB\t動詞-非自立可能-下一段-ラ行\t_\t0\troot\t_\tSpaceAfter=No|start_char=6|end_char=8\n6\tた\tた\tAUX\t助動詞-助動詞-タ\t_\t5\taux\t_\tSpaceAfter=No|start_char=8|end_char=9\n7\t。\t。\tPUNCT\t補助記号-句点\t_\t5\tpunct\t_\tSpaceAfter=No|start_char=9|end_char=10"
                         },
                         {
                             "text": "現在の時間は3時15分だ。",
@@ -735,7 +755,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t現在\t現在\tNOUN\t名詞-普通名詞-副詞可能\t_\t3\tnmod\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\tの\tの\tADP\t助詞-格助詞\t_\t1\tcase\t_\tSpaceAfter=No|start_char=2|end_char=3\n3\t時間\t時間\tNOUN\t名詞-普通名詞-助数詞可能\t_\t8\tnsubj\t_\tSpaceAfter=No|start_char=3|end_char=5\n4\tは\tは\tADP\t助詞-係助詞\t_\t3\tcase\t_\tSpaceAfter=No|start_char=5|end_char=6\n5\t3\t3\tNUM\t名詞-数詞\t_\t8\tcompound\t_\tSpaceAfter=No|start_char=6|end_char=7\n6\t時\t時\tNOUN\t名詞-普通名詞-助数詞可能\t_\t8\tcompound\t_\tSpaceAfter=No|start_char=7|end_char=8\n7\t15\t15\tNUM\t名詞-数詞\t_\t8\tnummod\t_\tSpaceAfter=No|start_char=8|end_char=10\n8\t分\t分\tNOUN\t名詞-普通名詞-助数詞可能\t_\t0\troot\t_\tSpaceAfter=No|start_char=10|end_char=11\n9\tだ\tだ\tAUX\t助動詞-助動詞-ダ\t_\t8\tcop\t_\tSpaceAfter=No|start_char=11|end_char=12\n10\t。\t。\tPUNCT\t補助記号-句点\t_\t8\tpunct\t_\tSpaceAfter=No|start_char=12|end_char=13"
                         }
                     ],
                     "transcription": {
@@ -749,7 +770,8 @@
                                 "reading": null
                             }
                         ]
-                    }
+                    },
+                    "conllu": "1\t時刻\t時刻\tNOUN\t名詞-普通名詞-副詞可能\t_\t0\troot\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\t。\t。\tPUNCT\t補助記号-句点\t_\t1\tpunct\t_\tSpaceAfter=No|start_char=2|end_char=3"
                 },
                 {
                     "text": "過去から現在を経て未来へと絶え間なく流れて行くもの。",
@@ -772,7 +794,8 @@
                                         "reading": "ながれ"
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t時間\t時間\tNOUN\t名詞-普通名詞-助数詞可能\t_\t3\tnmod\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\tの\tの\tADP\t助詞-格助詞\t_\t1\tcase\t_\tSpaceAfter=No|start_char=2|end_char=3\n3\t流れ\t流れ\tNOUN\t名詞-普通名詞-一般\t_\t0\troot\t_\tSpaceAfter=No|start_char=3|end_char=5"
                         },
                         {
                             "text": "それから長い時間がたった。",
@@ -799,7 +822,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\tそれ\t其れ\tCCONJ\t代名詞\t_\t6\tcc\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\tから\tから\tADP\t助詞-格助詞\t_\t1\tfixed\t_\tSpaceAfter=No|start_char=2|end_char=4\n3\t長い\t長い\tADJ\t形容詞-一般-形容詞\t_\t4\tacl\t_\tSpaceAfter=No|start_char=4|end_char=6\n4\t時間\t時間\tNOUN\t名詞-普通名詞-助数詞可能\t_\t6\tnsubj\t_\tSpaceAfter=No|start_char=6|end_char=8\n5\tが\tが\tADP\t助詞-格助詞\t_\t4\tcase\t_\tSpaceAfter=No|start_char=8|end_char=9\n6\tたった\t唯\tVERB\t動詞-一般-五段-ラ行\t_\t0\troot\t_\tSpaceAfter=No|start_char=9|end_char=12\n7\t。\t。\tPUNCT\t補助記号-句点\t_\t6\tpunct\t_\tSpaceAfter=No|start_char=12|end_char=13"
                         },
                         {
                             "text": "時間は待ってはくれない。",
@@ -826,7 +850,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t時間\t時間\tNOUN\t名詞-普通名詞-助数詞可能\t_\t3\tnsubj\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\tは\tは\tADP\t助詞-係助詞\t_\t1\tcase\t_\tSpaceAfter=No|start_char=2|end_char=3\n3\t待っ\t待つ\tVERB\t動詞-一般-五段-タ行\t_\t0\troot\t_\tSpaceAfter=No|start_char=3|end_char=5\n4\tて\tて\tSCONJ\t助詞-接続助詞\t_\t3\tmark\t_\tSpaceAfter=No|start_char=5|end_char=6\n5\tは\tは\tADP\t助詞-係助詞\t_\t4\tfixed\t_\tSpaceAfter=No|start_char=6|end_char=7\n6\tくれ\t呉れる\tVERB\t動詞-非自立可能-下一段-ラ行\t_\t4\tfixed\t_\tSpaceAfter=No|start_char=7|end_char=9\n7\tない\tない\tAUX\t助動詞-助動詞-ナイ\tPolarity=Neg\t4\tfixed\t_\tSpaceAfter=No|start_char=9|end_char=11\n8\t。\t。\tPUNCT\t補助記号-句点\t_\t3\tpunct\t_\tSpaceAfter=No|start_char=11|end_char=12"
                         }
                     ],
                     "transcription": {
@@ -888,7 +913,8 @@
                                 "reading": null
                             }
                         ]
-                    }
+                    },
+                    "conllu": "1\t過去\t過去\tNOUN\t名詞-普通名詞-副詞可能\t_\t5\tobl\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\tから\tから\tADP\t助詞-格助詞\t_\t1\tcase\t_\tSpaceAfter=No|start_char=2|end_char=4\n3\t現在\t現在\tNOUN\t名詞-普通名詞-副詞可能\t_\t5\tobj\t_\tSpaceAfter=No|start_char=4|end_char=6\n4\tを\tを\tADP\t助詞-格助詞\t_\t3\tcase\t_\tSpaceAfter=No|start_char=6|end_char=7\n5\t経\t経る\tVERB\t動詞-一般-下一段-ハ行\t_\t10\tadvcl\t_\tSpaceAfter=No|start_char=7|end_char=8\n6\tて\tて\tSCONJ\t助詞-接続助詞\t_\t5\tmark\t_\tSpaceAfter=No|start_char=8|end_char=9\n7\t未来\t未来\tNOUN\t名詞-普通名詞-一般\t_\t10\tobl\t_\tSpaceAfter=No|start_char=9|end_char=11\n8\tへ\tへ\tADP\t助詞-格助詞\t_\t7\tcase\t_\tSpaceAfter=No|start_char=11|end_char=12\n9\tと\tと\tADP\t助詞-格助詞\t_\t7\tcase\t_\tSpaceAfter=No|start_char=12|end_char=13\n10\t絶え\t絶える\tVERB\t動詞-一般-下一段-ア行\t_\t13\tadvcl\t_\tSpaceAfter=No|start_char=13|end_char=15\n11\t間\t間\tNOUN\t名詞-普通名詞-助数詞可能\t_\t12\tcompound\t_\tSpaceAfter=No|start_char=15|end_char=16\n12\tなく\t無い\tADJ\t形容詞-非自立可能-形容詞\t_\t13\tadvcl\t_\tSpaceAfter=No|start_char=16|end_char=18\n13\t流れ\t流れる\tVERB\t動詞-一般-下一段-ラ行\t_\t16\tacl\t_\tSpaceAfter=No|start_char=18|end_char=20\n14\tて\tて\tSCONJ\t助詞-接続助詞\t_\t13\tmark\t_\tSpaceAfter=No|start_char=20|end_char=21\n15\t行く\t行く\tVERB\t動詞-非自立可能-五段-カ行\t_\t14\tfixed\t_\tSpaceAfter=No|start_char=21|end_char=23\n16\tもの\t物\tNOUN\t名詞-普通名詞-サ変可能\t_\t0\troot\t_\tSpaceAfter=No|start_char=23|end_char=25\n17\t。\t。\tPUNCT\t補助記号-句点\t_\t16\tpunct\t_\tSpaceAfter=No|start_char=25|end_char=26"
                 },
                 {
                     "text": "一日の長さを24で割った長さ。60分の間。",
@@ -923,7 +949,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t空港\t空港\tNOUN\t名詞-普通名詞-一般\t_\t5\tobl\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\tまで\tまで\tADP\t助詞-副助詞\t_\t1\tcase\t_\tSpaceAfter=No|start_char=2|end_char=4\n3\t2\t2\tNUM\t名詞-数詞\t_\t4\tnummod\t_\tSpaceAfter=No|start_char=4|end_char=5\n4\t時間\t時間\tNOUN\t名詞-普通名詞-助数詞可能\t_\t5\tobl\t_\tSpaceAfter=No|start_char=5|end_char=7\n5\tかかる\t掛かる\tVERB\t動詞-非自立可能-五段-ラ行\t_\t0\troot\t_\tSpaceAfter=No|start_char=7|end_char=10\n6\t。\t。\tPUNCT\t補助記号-句点\t_\t5\tpunct\t_\tSpaceAfter=No|start_char=10|end_char=11"
                         }
                     ],
                     "transcription": {
@@ -989,7 +1016,8 @@
                                 "reading": null
                             }
                         ]
-                    }
+                    },
+                    "conllu": "1\t一\t一\tNUM\t名詞-数詞\t_\t2\tnummod\t_\tSpaceAfter=No|start_char=0|end_char=1\n2\t日\t日\tNOUN\t名詞-普通名詞-助数詞可能\t_\t4\tnmod\t_\tSpaceAfter=No|start_char=1|end_char=2\n3\tの\tの\tADP\t助詞-格助詞\t_\t2\tcase\t_\tSpaceAfter=No|start_char=2|end_char=3\n4\t長\t長い\tADJ\t形容詞-一般-形容詞\t_\t9\tobj\t_\tSpaceAfter=No|start_char=3|end_char=4\n5\tさ\tさ\tPART\t接尾辞-名詞的-一般\t_\t4\tmark\t_\tSpaceAfter=No|start_char=4|end_char=5\n6\tを\tを\tADP\t助詞-格助詞\t_\t4\tcase\t_\tSpaceAfter=No|start_char=5|end_char=6\n7\t24\t24\tNUM\t名詞-数詞\t_\t9\tcompound\t_\tSpaceAfter=No|start_char=6|end_char=8\n8\tで\tで\tADP\t助詞-格助詞\t_\t7\tcase\t_\tSpaceAfter=No|start_char=8|end_char=9\n9\t割っ\t割る\tVERB\t動詞-一般-五段-ラ行\t_\t11\tacl\t_\tSpaceAfter=No|start_char=9|end_char=11\n10\tた\tた\tAUX\t助動詞-助動詞-タ\t_\t9\taux\t_\tSpaceAfter=No|start_char=11|end_char=12\n11\t長\t長い\tADJ\t形容詞-一般-形容詞\t_\t0\troot\t_\tSpaceAfter=No|start_char=12|end_char=13\n12\tさ\tさ\tPART\t接尾辞-名詞的-一般\t_\t11\tmark\t_\tSpaceAfter=No|start_char=13|end_char=14\n13\t。\t。\tPUNCT\t補助記号-句点\t_\t11\tpunct\t_\tSpaceAfter=No|start_char=14|end_char=15\n\n1\t60\t60\tNUM\t名詞-数詞\t_\t2\tnummod\t_\tSpaceAfter=No|start_char=15|end_char=17\n2\t分\t分\tNOUN\t名詞-普通名詞-助数詞可能\t_\t4\tnmod\t_\tSpaceAfter=No|start_char=17|end_char=18\n3\tの\tの\tADP\t助詞-格助詞\t_\t2\tcase\t_\tSpaceAfter=No|start_char=18|end_char=19\n4\t間\t間\tNOUN\t名詞-普通名詞-副詞可能\t_\t0\troot\t_\tSpaceAfter=No|start_char=19|end_char=20\n5\t。\t。\tPUNCT\t補助記号-句点\t_\t4\tpunct\t_\tSpaceAfter=No|start_char=20|end_char=21"
                 }
             ]
         },
@@ -1020,7 +1048,8 @@
                                         "reading": "sigan"
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t근무\t근무\tNOUN\tncn\t_\t2\tcompound\t_\tstart_char=0|end_char=2\n2\t시간\t시간\tNOUN\tncn\t_\t0\troot\t_\tSpaceAfter=No|start_char=3|end_char=5"
                         },
                         {
                             "text": "그 일은 시간이 많이 걸린다.",
@@ -1067,7 +1096,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t그\t그\tDET\tmmd\t_\t2\tdet\t_\tstart_char=0|end_char=1\n2\t일은\t일+은\tNOUN\tncn+jxt\t_\t5\tdislocated\t_\tstart_char=2|end_char=4\n3\t시간이\t시간+이\tNOUN\tncn+jcs\t_\t5\tnsubj\t_\tstart_char=5|end_char=8\n4\t많이\t많이\tADV\tmag\t_\t5\tadvmod\t_\tstart_char=9|end_char=11\n5\t걸린다\t걸리+ㄴ다\tVERB\tpvg+ef\t_\t0\troot\t_\tSpaceAfter=No|start_char=12|end_char=15\n6\t.\t.\tPUNCT\tsf\t_\t5\tpunct\t_\tSpaceAfter=No|start_char=15|end_char=16"
                         },
                         {
                             "text": "지구가 한 바퀴 자전하는 데 걸리는 시간은 24시간이다.",
@@ -1138,7 +1168,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t지구가\t지구+가\tNOUN\tncn+jcs\t_\t4\tnsubj\t_\tstart_char=0|end_char=3\n2\t한\t한\tNUM\tnnc\t_\t3\tnummod\t_\tstart_char=4|end_char=5\n3\t바퀴\t바퀴\tNOUN\tncn\t_\t4\tdep\t_\tstart_char=6|end_char=8\n4\t자전하는\t자전+하+는\tVERB\tncpa+xsv+etm\t_\t5\tacl\t_\tstart_char=9|end_char=13\n5\t데\t데\tNOUN\tnbn\t_\t6\tobl\t_\tstart_char=14|end_char=15\n6\t걸리는\t걸리+는\tVERB\tpvg+etm\t_\t7\tacl\t_\tstart_char=16|end_char=19\n7\t시간은\t시간+은\tNOUN\tncn+jxt\t_\t8\tdislocated\t_\tstart_char=20|end_char=23\n8\t24시간이다\t24+시간+이+다\tVERB\tnno+nbu+jp+ep\t_\t0\troot\t_\tSpaceAfter=No|start_char=24|end_char=30\n9\t.\t.\tPUNCT\tsf\t_\t8\tpunct\t_\tSpaceAfter=No|start_char=30|end_char=31"
                         }
                     ],
                     "transcription": {
@@ -1184,7 +1215,8 @@
                                 "reading": null
                             }
                         ]
-                    }
+                    },
+                    "conllu": "1\t어떤\t어떻+ㄴ\tVERB\tpad+etm\t_\t2\tamod\t_\tstart_char=0|end_char=2\n2\t시각에서\t시각+에서\tADV\tncn+jca\t_\t5\tadvcl\t_\tstart_char=3|end_char=7\n3\t어떤\t어떻+ㄴ\tVERB\tpad+etm\t_\t4\tamod\t_\tstart_char=8|end_char=10\n4\t시각까지의\t시각+까지+의\tNOUN\tncn+jxc+jcm\t_\t5\tnmod\t_\tstart_char=11|end_char=16\n5\t사이\t사이\tNOUN\tncn\t_\t0\troot\t_\tSpaceAfter=No|start_char=17|end_char=19\n6\t.\t.\tPUNCT\tsf\t_\t5\tpunct\t_\tSpaceAfter=No|start_char=19|end_char=20"
                 },
                 {
                     "text": "시각(時刻).",
@@ -1227,7 +1259,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t비행기\t비행기\tNOUN\tncn\t_\t2\tcompound\t_\tstart_char=0|end_char=3\n2\t도착\t도착\tNOUN\tncn\t_\t3\tcompound\t_\tstart_char=4|end_char=6\n3\t시간을\t시간+을\tNOUN\tncn+jco\t_\t4\tobj\t_\tstart_char=7|end_char=10\n4\t알려주세요\t알리+어+주+세요\tVERB\tpvg+ecx+px+ef\t_\t0\troot\t_\tSpaceAfter=No|start_char=11|end_char=16\n5\t.\t.\tPUNCT\tsf\t_\t4\tpunct\t_\tSpaceAfter=No|start_char=16|end_char=17"
                         },
                         {
                             "text": "약속 시간에 늦었다.",
@@ -1258,7 +1291,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t약속\t약속\tNOUN\tncn\t_\t2\tcompound\t_\tstart_char=0|end_char=2\n2\t시간에\t시간+에\tADV\tncn+jca\t_\t3\tobl\t_\tstart_char=3|end_char=6\n3\t늦었다\t늦+었+다\tADJ\tpaa+ep+ef\t_\t0\troot\t_\tSpaceAfter=No|start_char=7|end_char=10\n4\t.\t.\tPUNCT\tsf\t_\t3\tpunct\t_\tSpaceAfter=No|start_char=10|end_char=11"
                         },
                         {
                             "text": "현재 시간은 3시 15분이다.",
@@ -1297,7 +1331,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t현재\t현재\tNOUN\tncn\t_\t2\tcompound\t_\tstart_char=0|end_char=2\n2\t시간은\t시간+은\tNOUN\tncn+jxt\t_\t4\tdislocated\t_\tstart_char=3|end_char=6\n3\t3시\t3+시\tNOUN\tnnc+nbu\t_\t4\tcompound\t_\tstart_char=7|end_char=9\n4\t15분이다\t15+분+이+다\tVERB\tnno+nbu+jp+ef\t_\t0\troot\t_\tSpaceAfter=No|start_char=10|end_char=15\n5\t.\t.\tPUNCT\tsf\t_\t4\tpunct\t_\tSpaceAfter=No|start_char=15|end_char=16"
                         }
                     ],
                     "transcription": {
@@ -1323,7 +1358,8 @@
                                 "reading": null
                             }
                         ]
-                    }
+                    },
+                    "conllu": "1\t시각(\t시각(\tNOUN\tncn+jcm\t_\t2\tnmod\t_\tSpaceAfter=No|start_char=0|end_char=3\n2\t時刻\t時刻\tNOUN\tncn\t_\t0\troot\t_\tSpaceAfter=No|start_char=3|end_char=5\n3\t)\t)\tPUNCT\tsr\t_\t2\tpunct\t_\tSpaceAfter=No|start_char=5|end_char=6\n4\t.\t.\tPUNCT\tsf\t_\t2\tpunct\t_\tSpaceAfter=No|start_char=6|end_char=7"
                 },
                 {
                     "text": "과거로부터 현재를 거쳐 미래로 끊임없이 흘러가는 것.",
@@ -1346,7 +1382,8 @@
                                         "reading": "heuleum"
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t시간의\t시간+의\tNOUN\tncn+jcm\t_\t2\tnmod\t_\tstart_char=0|end_char=3\n2\t흐름\t흐름\tNOUN\tncn\t_\t0\troot\t_\tSpaceAfter=No|start_char=4|end_char=6"
                         },
                         {
                             "text": "그 후로 시간이 많이 흘렀다.",
@@ -1393,7 +1430,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t그\t그\tDET\tmmd\t_\t2\tdet\t_\tstart_char=0|end_char=1\n2\t후로\t후+로\tADV\tncn+jca\t_\t5\tadvcl\t_\tstart_char=2|end_char=4\n3\t시간이\t시간+이\tNOUN\tncn+jcs\t_\t5\tnsubj\t_\tstart_char=5|end_char=8\n4\t많이\t많이\tADV\tmag\t_\t5\tadvmod\t_\tstart_char=9|end_char=11\n5\t흘렀다\t흐르+었+다\tVERB\tpvg+ep+ef\t_\t0\troot\t_\tSpaceAfter=No|start_char=12|end_char=15\n6\t.\t.\tPUNCT\tsf\t_\t5\tpunct\t_\tSpaceAfter=No|start_char=15|end_char=16"
                         },
                         {
                             "text": "시간은 기다려 주지 않는다.",
@@ -1432,7 +1470,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t시간은\t시간+은\tNOUN\tncn+jxt\t_\t2\tdislocated\t_\tstart_char=0|end_char=3\n2\t기다려\t기다리+어\tVERB\tpvg+ecx\t_\t0\troot\t_\tstart_char=4|end_char=7\n3\t주지\t주+지\tVERB\tpx+ecx\t_\t2\tcompound\t_\tstart_char=8|end_char=10\n4\t않는다\t않\tAUX\tpx+ef\t_\t2\taux\t_\tSpaceAfter=No|start_char=11|end_char=14\n5\t.\t.\tPUNCT\tsf\t_\t4\tpunct\t_\tSpaceAfter=No|start_char=14|end_char=15"
                         }
                     ],
                     "transcription": {
@@ -1494,7 +1533,8 @@
                                 "reading": null
                             }
                         ]
-                    }
+                    },
+                    "conllu": "1\t과거로부터\t과거+로+부터\tADV\tncn+jca+jxc\t_\t3\tadvcl\t_\tstart_char=0|end_char=5\n2\t현재를\t현재+를\tNOUN\tncn+jco\t_\t3\tobj\t_\tstart_char=6|end_char=9\n3\t거쳐\t거치+어\tSCONJ\tpvg+ecs\t_\t6\tccomp\t_\tstart_char=10|end_char=12\n4\t미래로\t미래+로\tADV\tncn+jca\t_\t6\tadvcl\t_\tstart_char=13|end_char=16\n5\t끊임없이\t끊임없이\tADV\tmag\t_\t6\tadvmod\t_\tstart_char=17|end_char=21\n6\t흘러가는\t흐르+어+가+는\tVERB\tpvg+ecx+px+etm\t_\t7\tacl\t_\tstart_char=22|end_char=26\n7\t것\t것\tNOUN\tnbn\t_\t0\troot\t_\tSpaceAfter=No|start_char=27|end_char=28\n8\t.\t.\tPUNCT\tsf\t_\t7\tpunct\t_\tSpaceAfter=No|start_char=28|end_char=29"
                 },
                 {
                     "text": "하루를 24로 나눈 길이. 60분 동안.",
@@ -1537,7 +1577,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t공항까지\t공항+까지\tADV\tncn+jxc\t_\t4\tadvcl\t_\tstart_char=0|end_char=4\n2\t두\t두\tNUM\tnnc\t_\t3\tnummod\t_\tstart_char=5|end_char=6\n3\t시간\t시간\tNOUN\tncn\t_\t4\tdep\t_\tstart_char=7|end_char=9\n4\t걸린다\t걸리+ㄴ다\tVERB\tpvg+ef\t_\t0\troot\t_\tSpaceAfter=No|start_char=10|end_char=13\n5\t.\t.\tPUNCT\tsf\t_\t4\tpunct\t_\tSpaceAfter=No|start_char=13|end_char=14"
                         }
                     ],
                     "transcription": {
@@ -1595,7 +1636,8 @@
                                 "reading": null
                             }
                         ]
-                    }
+                    },
+                    "conllu": "1\t하루를\t하루+를\tNOUN\tncn+jco\t_\t3\tobj\t_\tstart_char=0|end_char=3\n2\t24로\t24+로\tADV\tnnc+nbu+jca\t_\t3\tadvcl\t_\tstart_char=4|end_char=7\n3\t나눈\t나누+ㄴ\tVERB\tpvg+etm\t_\t4\tacl\t_\tstart_char=8|end_char=10\n4\t길이\t길+이\tNOUN\tncn+jcs\t_\t0\troot\t_\tSpaceAfter=No|start_char=11|end_char=13\n5\t.\t.\tPUNCT\tsf\t_\t4\tpunct\t_\tstart_char=13|end_char=14\n\n1\t60분\t60+분\tNOUN\tnnc+nbu\t_\t2\tcompound\t_\tstart_char=15|end_char=18\n2\t동안\t동안\tNOUN\tncn\t_\t0\troot\t_\tSpaceAfter=No|start_char=19|end_char=21\n3\t.\t.\tPUNCT\tsf\t_\t2\tpunct\t_\tSpaceAfter=No|start_char=21|end_char=22"
                 }
             ]
         }
@@ -1624,7 +1666,8 @@
                                         "reading": "jiàgé"
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t合理\t合理\tADJ\tJJ\t_\t2\tamod\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\t价格\t价格\tNOUN\tNN\t_\t0\troot\t_\tSpaceAfter=No|start_char=2|end_char=4"
                         },
                         {
                             "text": "价格上涨",
@@ -1635,7 +1678,8 @@
                                         "reading": "jiàgéshàngzhǎng"
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t价格\t价格\tNOUN\tNN\t_\t3\tnsubj\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\t上\t上\tADP\tIN\t_\t1\tcase\t_\tSpaceAfter=No|start_char=2|end_char=3\n3\t涨\t涨\tVERB\tVV\t_\t0\troot\t_\tSpaceAfter=No|start_char=3|end_char=4"
                         },
                         {
                             "text": "普通的学生买不起价格太贵的商品。",
@@ -1678,7 +1722,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t普通\t普通\tADJ\tJJ\t_\t3\tamod\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\t的\t的\tSCONJ\tDEC\t_\t1\tmark:rel\t_\tSpaceAfter=No|start_char=2|end_char=3\n3\t学生\t学生\tNOUN\tNN\t_\t4\tnsubj\t_\tSpaceAfter=No|start_char=3|end_char=5\n4\t买\t买\tVERB\tVV\t_\t0\troot\t_\tSpaceAfter=No|start_char=5|end_char=6\n5\t不\t不\tADV\tRB\tPolarity=Neg\t4\tadvmod\t_\tSpaceAfter=No|start_char=6|end_char=7\n6\t起\t起\tVERB\tVV\t_\t4\tmark\t_\tSpaceAfter=No|start_char=7|end_char=8\n7\t价格\t价格\tNOUN\tNN\t_\t8\tnsubj\t_\tSpaceAfter=No|start_char=8|end_char=10\n8\t太贵\t太贵\tADJ\tJJ\t_\t10\tacl:relcl\t_\tSpaceAfter=No|start_char=10|end_char=12\n9\t的\t的\tSCONJ\tDEC\t_\t8\tmark:rel\t_\tSpaceAfter=No|start_char=12|end_char=13\n10\t商品\t商品\tNOUN\tNN\t_\t4\tobj\t_\tSpaceAfter=No|start_char=13|end_char=15\n11\t。\t。\tPUNCT\t.\t_\t4\tpunct\t_\tSpaceAfter=No|start_char=15|end_char=16"
                         }
                     ],
                     "transcription": {
@@ -1716,7 +1761,8 @@
                                 "reading": null
                             }
                         ]
-                    }
+                    },
+                    "conllu": "1\t商品\t商品\tNOUN\tNN\t_\t4\tnmod\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\t或\t或\tCCONJ\tCC\t_\t3\tcc\t_\tSpaceAfter=No|start_char=2|end_char=3\n3\t服务\t服务\tNOUN\tNN\t_\t1\tconj\t_\tSpaceAfter=No|start_char=3|end_char=5\n4\t价值\t价值\tNOUN\tNN\t_\t7\tnmod\t_\tSpaceAfter=No|start_char=5|end_char=7\n5\t的\t的\tPART\tDEC\tCase=Gen\t4\tcase\t_\tSpaceAfter=No|start_char=7|end_char=8\n6\t货币\t货币\tNOUN\tNN\t_\t7\tnmod\t_\tSpaceAfter=No|start_char=8|end_char=10\n7\t表现\t表现\tNOUN\tNN\t_\t0\troot\t_\tSpaceAfter=No|start_char=10|end_char=12\n8\t。\t。\tPUNCT\t.\t_\t7\tpunct\t_\tSpaceAfter=No|start_char=12|end_char=13"
                 }
             ]
         },
@@ -1739,7 +1785,8 @@
                                         "reading": "てきせいかかく"
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t適正\t適正\tADJ\t形状詞-一般\t_\t2\tamod\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\t価格\t価格\tNOUN\t名詞-普通名詞-一般\t_\t0\troot\t_\tSpaceAfter=No|start_char=2|end_char=4"
                         },
                         {
                             "text": "価格が上昇する",
@@ -1762,7 +1809,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t価格\t価格\tNOUN\t名詞-普通名詞-一般\t_\t3\tnsubj\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\tが\tが\tADP\t助詞-格助詞\t_\t1\tcase\t_\tSpaceAfter=No|start_char=2|end_char=3\n3\t上昇\t上昇\tVERB\t名詞-普通名詞-サ変可能\t_\t0\troot\t_\tSpaceAfter=No|start_char=3|end_char=5\n4\tする\t為る\tAUX\t動詞-非自立可能-サ行変格\t_\t3\taux\t_\tSpaceAfter=No|start_char=5|end_char=7"
                         },
                         {
                             "text": "普通の学生はそんなに 高価な/値段の高い/高い値段 のものは買えない。",
@@ -1845,7 +1893,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t普通\t普通\tADJ\t名詞-普通名詞-形状詞可能\t_\t3\tnmod\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\tの\tの\tADP\t助詞-格助詞\t_\t1\tcase\t_\tSpaceAfter=No|start_char=2|end_char=3\n3\t学生\t学生\tNOUN\t名詞-普通名詞-一般\t_\t19\tnsubj:outer\t_\tSpaceAfter=No|start_char=3|end_char=5\n4\tは\tは\tADP\t助詞-係助詞\t_\t3\tcase\t_\tSpaceAfter=No|start_char=5|end_char=6\n5\tそんな\tそんな\tADJ\t形状詞-一般\t_\t7\tadvcl\t_\tSpaceAfter=No|start_char=6|end_char=9\n6\tに\tだ\tAUX\t助動詞-助動詞-ダ\t_\t5\taux\t_\tSpacesAfter= |start_char=9|end_char=10\n7\t高価\t高価\tADJ\t名詞-普通名詞-形状詞可能\t_\t10\tacl\t_\tSpaceAfter=No|start_char=11|end_char=13\n8\tな\tだ\tAUX\t助動詞-助動詞-ダ\t_\t7\taux\t_\tSpaceAfter=No|start_char=13|end_char=14\n9\t/\t/\tSYM\t補助記号-一般\t_\t10\tcompound\t_\tSpaceAfter=No|start_char=14|end_char=15\n10\t値段\t値段\tNOUN\t名詞-普通名詞-一般\t_\t12\tnmod\t_\tSpaceAfter=No|start_char=15|end_char=17\n11\tの\tの\tADP\t助詞-格助詞\t_\t10\tcase\t_\tSpaceAfter=No|start_char=17|end_char=18\n12\t高い\t高い\tADJ\t形容詞-一般-形容詞\t_\t15\tacl\t_\tSpaceAfter=No|start_char=18|end_char=20\n13\t/\t/\tSYM\t補助記号-一般\t_\t14\tcompound\t_\tSpaceAfter=No|start_char=20|end_char=21\n14\t高い\t高い\tADJ\t形容詞-一般-形容詞\t_\t15\tacl\t_\tSpaceAfter=No|start_char=21|end_char=23\n15\t値段\t値段\tNOUN\t名詞-普通名詞-一般\t_\t17\tnmod\t_\tSpacesAfter= |start_char=23|end_char=25\n16\tの\tの\tADP\t助詞-格助詞\t_\t15\tcase\t_\tSpaceAfter=No|start_char=26|end_char=27\n17\tもの\t物\tNOUN\t名詞-普通名詞-サ変可能\t_\t19\tnsubj\t_\tSpaceAfter=No|start_char=27|end_char=29\n18\tは\tは\tADP\t助詞-係助詞\t_\t17\tcase\t_\tSpaceAfter=No|start_char=29|end_char=30\n19\t買え\t買う\tVERB\t動詞-一般-下一段-ア行\t_\t0\troot\t_\tSpaceAfter=No|start_char=30|end_char=32\n20\tない\tない\tAUX\t助動詞-助動詞-ナイ\tPolarity=Neg\t19\taux\t_\tSpaceAfter=No|start_char=32|end_char=34\n21\t。\t。\tPUNCT\t補助記号-句点\t_\t19\tpunct\t_\tSpaceAfter=No|start_char=34|end_char=35"
                         }
                     ],
                     "synonym": "値段 ( ねだん )",
@@ -1896,7 +1945,8 @@
                                 "reading": null
                             }
                         ]
-                    }
+                    },
+                    "conllu": "1\t物事\t物事\tNOUN\t名詞-普通名詞-一般\t_\t3\tnmod\t_\tSpaceAfter=No|start_char=0|end_char=2\n2\tや\tや\tADP\t助詞-副助詞\t_\t1\tcase\t_\tSpaceAfter=No|start_char=2|end_char=3\n3\tサービス\tサービス\tNOUN\t名詞-普通名詞-サ変可能\t_\t5\tnmod\t_\tSpaceAfter=No|start_char=3|end_char=7\n4\tの\tの\tADP\t助詞-格助詞\t_\t3\tcase\t_\tSpaceAfter=No|start_char=7|end_char=8\n5\t価値\t価値\tNOUN\t名詞-普通名詞-一般\t_\t10\tobj\t_\tSpaceAfter=No|start_char=8|end_char=10\n6\tを\tを\tADP\t助詞-格助詞\t_\t5\tcase\t_\tSpaceAfter=No|start_char=10|end_char=11\n7\tお\t御\tNOUN\t接頭辞\t_\t8\tcompound\t_\tSpaceAfter=No|start_char=11|end_char=12\n8\t金\t金\tNOUN\t名詞-普通名詞-一般\t_\t10\tobl\t_\tSpaceAfter=No|start_char=12|end_char=13\n9\tで\tで\tADP\t助詞-格助詞\t_\t8\tcase\t_\tSpaceAfter=No|start_char=13|end_char=14\n10\t表現\t表現\tVERB\t名詞-普通名詞-サ変可能\t_\t13\tacl\t_\tSpaceAfter=No|start_char=14|end_char=16\n11\tし\t為る\tAUX\t動詞-非自立可能-サ行変格\t_\t10\taux\t_\tSpaceAfter=No|start_char=16|end_char=17\n12\tた\tた\tAUX\t助動詞-助動詞-タ\t_\t10\taux\t_\tSpaceAfter=No|start_char=17|end_char=18\n13\tもの\t物\tNOUN\t名詞-普通名詞-サ変可能\t_\t0\troot\t_\tSpaceAfter=No|start_char=18|end_char=20\n14\t。\t。\tPUNCT\t補助記号-句点\t_\t13\tpunct\t_\tSpaceAfter=No|start_char=20|end_char=21"
                 }
             ]
         },
@@ -1927,7 +1977,8 @@
                                         "reading": "gagyeog"
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t적정\t적정\tNOUN\tncn\t_\t2\tcompound\t_\tstart_char=0|end_char=2\n2\t가격\t가격\tNOUN\tncn\t_\t0\troot\t_\tSpaceAfter=No|start_char=3|end_char=5"
                         },
                         {
                             "text": "가격이 오르다",
@@ -1946,7 +1997,8 @@
                                         "reading": "oleuda"
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t가격이\t가격+이\tNOUN\tncn+jcs\t_\t2\tnsubj\t_\tstart_char=0|end_char=3\n2\t오르다\t오르+다\tVERB\tpvg+ef\t_\t0\troot\t_\tSpaceAfter=No|start_char=4|end_char=7"
                         },
                         {
                             "text": "보통의 학생은 그렇게 높은 가격의 물건을 살 수 없다.",
@@ -2025,7 +2077,8 @@
                                         "reading": null
                                     }
                                 ]
-                            }
+                            },
+                            "conllu": "1\t보통의\t보통+의\tNOUN\tncn+jcm\t_\t2\tnmod\t_\tstart_char=0|end_char=3\n2\t학생은\t학생+은\tNOUN\tncn+jxt\t_\t7\tdislocated\t_\tstart_char=4|end_char=7\n3\t그렇게\t그렇+게\tSCONJ\tpad+ecs\t_\t4\txcomp\t_\tstart_char=8|end_char=11\n4\t높은\t높+ㄴ\tADJ\tpaa+etm\t_\t5\tamod\t_\tstart_char=12|end_char=14\n5\t가격의\t가격+의\tNOUN\tncn+jcm\t_\t6\tnmod\t_\tstart_char=15|end_char=18\n6\t물건을\t물건+을\tNOUN\tncn+jco\t_\t7\tobj\t_\tstart_char=19|end_char=22\n7\t살\t살+ㄹ\tVERB\tpvg+etm\t_\t0\troot\t_\tstart_char=23|end_char=24\n8\t수\t수\tNOUN\tnbn\t_\t7\tobl\t_\tstart_char=25|end_char=26\n9\t없다\t없+다\tADJ\tpaa+ef\t_\t8\tfixed\t_\tSpaceAfter=No|start_char=27|end_char=29\n10\t.\t.\tPUNCT\tsf\t_\t8\tpunct\t_\tSpaceAfter=No|start_char=29|end_char=30"
                         }
                     ],
                     "transcription": {
@@ -2079,7 +2132,8 @@
                                 "reading": null
                             }
                         ]
-                    }
+                    },
+                    "conllu": "1\t사물이나\t사물+이나\tCCONJ\tncn+jcj\t_\t3\tnmod\t_\tstart_char=0|end_char=4\n2\t서비스의\t서비스+의\tNOUN\tncn+jcm\t_\t1\tconj\t_\tstart_char=5|end_char=9\n3\t가치를\t가치+를\tNOUN\tncn+jco\t_\t5\tobj\t_\tstart_char=10|end_char=13\n4\t돈으로\t돈+으로\tADV\tncn+jca\t_\t5\tadvcl\t_\tstart_char=14|end_char=17\n5\t나타낸\t나타내+ㄴ\tVERB\tpvg+etm\t_\t6\tacl\t_\tstart_char=18|end_char=21\n6\t것\t것\tNOUN\tnbn\t_\t0\troot\t_\tSpaceAfter=No|start_char=22|end_char=23\n7\t.\t.\tPUNCT\tsf\t_\t6\tpunct\t_\tSpaceAfter=No|start_char=23|end_char=24"
                 }
             ]
         }

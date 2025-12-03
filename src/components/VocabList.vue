@@ -19,6 +19,14 @@ const props = defineProps({
   showFurigana: {
     type: Boolean,
     default: true
+  },
+  showKorean: {
+    type: Boolean,
+    default: true
+  },
+  showDepTree: {
+    type: Boolean,
+    default: false
   }
 })
 
@@ -64,6 +72,8 @@ const filteredList = computed(() => {
       :search-query="searchQuery"
       :show-pinyin="showPinyin"
       :show-furigana="showFurigana"
+      :show-korean="showKorean"
+      :show-dep-tree="showDepTree"
     />
     <div v-if="filteredList.length === 0" class="no-results">
       No results found for "{{ searchQuery }}"

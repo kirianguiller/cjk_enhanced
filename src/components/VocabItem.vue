@@ -1,5 +1,6 @@
 <script setup>
 import { ref, watch } from 'vue'
+import DepTree from './DepTree.vue'
 
 const props = defineProps({
   item: {
@@ -21,6 +22,14 @@ const props = defineProps({
   showFurigana: {
     type: Boolean,
     default: true
+  },
+  showKorean: {
+    type: Boolean,
+    default: true
+  },
+  showDepTree: {
+    type: Boolean,
+    default: false
   }
 })
 
@@ -95,7 +104,9 @@ const highlight = (text) => {
 const renderText = (dataObj, lang) => {
   if (!dataObj) return ''
   
-  const showPronunciation = (lang === 'C' && props.showPinyin) || (lang === 'J' && props.showFurigana)
+  const showPronunciation = (lang === 'C' && props.showPinyin) || 
+                            (lang === 'J' && props.showFurigana) ||
+                            (lang === 'K' && props.showKorean)
   
   if (!showPronunciation || !dataObj.transcription || !dataObj.transcription.segments) {
     return highlight(dataObj.text)
@@ -154,16 +165,19 @@ const renderText = (dataObj, lang) => {
         <div class="ex-col chinese">
           <div v-for="(ex, i) in getDefinitionData(index)?.examples" :key="i" class="example">
             <span class="ex-index">①</span> <span v-html="renderText(getExampleData('C', index, i), 'C')"></span>
+            <DepTree v-if="showDepTree && getExampleData('C', index, i)?.conllu" :conll="getExampleData('C', index, i).conllu" />
           </div>
         </div>
         <div class="ex-col japanese">
           <div v-for="(ex, i) in getDefinitionData(index)?.examples" :key="i" class="example">
             <span class="ex-index">①</span> <span v-html="renderText(getExampleData('J', index, i), 'J')"></span>
+            <DepTree v-if="showDepTree && getExampleData('J', index, i)?.conllu" :conll="getExampleData('J', index, i).conllu" />
           </div>
         </div>
         <div class="ex-col korean">
           <div v-for="(ex, i) in getDefinitionData(index)?.examples" :key="i" class="example">
             <span class="ex-index">①</span> <span v-html="renderText(getExampleData('K', index, i), 'K')"></span>
+            <DepTree v-if="showDepTree && getExampleData('K', index, i)?.conllu" :conll="getExampleData('K', index, i).conllu" />
           </div>
         </div>
       </div>
@@ -255,5 +269,14 @@ const renderText = (dataObj, lang) => {
   border-radius: 4px;
   padding: 0 4px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+ruby {
+  ruby-position: over;
+}
+
+rt {
+  font-size: 0.6em;
+  color: #666;
 }
 </style>

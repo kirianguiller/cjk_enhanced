@@ -6,6 +6,8 @@ const searchQuery = ref('')
 const globalDefLang = ref('C') // Default to Chinese definitions
 const showPinyin = ref(true)
 const showFurigana = ref(true)
+const showKorean = ref(true)
+const showDepTree = ref(false)
 
 const setGlobalLang = (lang) => {
   globalDefLang.value = lang
@@ -24,10 +26,18 @@ const setGlobalLang = (lang) => {
         />
       </div>
       <div class="header-controls">
-        <div class="toggles">
-          <label><input type="checkbox" v-model="showPinyin"> Pinyin</label>
-          <label><input type="checkbox" v-model="showFurigana"> Furigana</label>
-        </div>
+        <label class="toggle">
+          <input type="checkbox" v-model="showPinyin"> Pinyin
+        </label>
+        <label class="toggle">
+          <input type="checkbox" v-model="showFurigana"> Furigana
+        </label>
+        <label class="toggle">
+          <input type="checkbox" v-model="showKorean"> Korean
+        </label>
+        <label class="toggle">
+          <input type="checkbox" v-model="showDepTree"> DepTree
+        </label>
         <!-- Global Language Toggles (Flags or Buttons) -->
         <!-- Screenshot shows flags on the right: China, Japan, Korea -->
         <button @click="setGlobalLang('C')" :class="{ active: globalDefLang === 'C' }" title="Chinese Definitions">🇨🇳</button>
@@ -43,6 +53,8 @@ const setGlobalLang = (lang) => {
           :global-def-lang="globalDefLang"
           :show-pinyin="showPinyin"
           :show-furigana="showFurigana"
+          :show-korean="showKorean"
+          :show-dep-tree="showDepTree"
         />
       </div>
     </main>
