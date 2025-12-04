@@ -20,6 +20,9 @@ export default defineConfig({
         short_name: 'CJK808',
         description: 'Trilingual Vocabulary Cards',
         theme_color: '#ffffff',
+        background_color: '#ffffff',
+        display: 'standalone',
+        start_url: '/',
         icons: [
           {
             src: 'pwa-192x192.png',
