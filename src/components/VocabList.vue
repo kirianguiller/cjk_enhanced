@@ -8,9 +8,17 @@ const props = defineProps({
     type: String,
     default: ''
   },
-  globalDefLang: {
-    type: String,
-    default: 'CJK'
+  showChinese: {
+    type: Boolean,
+    default: true
+  },
+  showJapanese: {
+    type: Boolean,
+    default: true
+  },
+  showKorean: {
+    type: Boolean,
+    default: true
   },
   showPinyin: {
     type: Boolean,
@@ -20,7 +28,7 @@ const props = defineProps({
     type: Boolean,
     default: true
   },
-  showKorean: {
+  showKoreanRomanization: {
     type: Boolean,
     default: true
   },
@@ -68,11 +76,13 @@ const filteredList = computed(() => {
       v-for="item in filteredList" 
       :key="item.rank" 
       :item="item"
-      :definition-language="globalDefLang"
+      :show-chinese="showChinese"
+      :show-japanese="showJapanese"
+      :show-korean="showKorean"
       :search-query="searchQuery"
       :show-pinyin="showPinyin"
       :show-furigana="showFurigana"
-      :show-korean="showKorean"
+      :show-korean-romanization="showKoreanRomanization"
       :show-dep-tree="showDepTree"
     />
     <div v-if="filteredList.length === 0" class="no-results">

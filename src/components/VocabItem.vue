@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import DepTree from './DepTree.vue'
 
 const props = defineProps({
@@ -7,9 +7,17 @@ const props = defineProps({
     type: Object,
     required: true
   },
-  definitionLanguage: {
-    type: String,
-    default: 'CJK' // 'CJK', 'C', 'J', 'K' - determines which definition text to show
+  showChinese: {
+    type: Boolean,
+    default: true
+  },
+  showJapanese: {
+    type: Boolean,
+    default: true
+  },
+  showKorean: {
+    type: Boolean,
+    default: true
   },
   searchQuery: {
     type: String,
@@ -23,7 +31,7 @@ const props = defineProps({
     type: Boolean,
     default: true
   },
-  showKorean: {
+  showKoreanRomanization: {
     type: Boolean,
     default: true
   },
@@ -34,6 +42,15 @@ const props = defineProps({
 })
 
 const hoveredTree = ref(null)
+
+const gridStyle = computed(() => {
+  const count = (props.showChinese ? 1 : 0) + (props.showJapanese ? 1 : 0) + (props.showKorean ? 1 : 0)
+  if (count === 0) return { display: 'none' }
+  return {
+    display: 'grid',
+    gridTemplateColumns: `repeat(${count}, 1fr)`
+  }
+})
 
 const getDefinitionData = (defIndex, langCode) => {
   const langKey = {
@@ -82,7 +99,7 @@ const renderText = (dataObj, lang) => {
   
   const showPronunciation = (lang === 'C' && props.showPinyin) || 
                             (lang === 'J' && props.showFurigana) ||
-                            (lang === 'K' && props.showKorean)
+                            (lang === 'K' && props.showKoreanRomanization)
   
   if (!showPronunciation || !dataObj.transcription || !dataObj.transcription.segments) {
     return highlight(dataObj.text)
@@ -106,16 +123,16 @@ const renderText = (dataObj, lang) => {
 <template>
   <div class="vocab-card">
     <!-- Header Row -->
-    <div class="header-row">
-      <div class="header-col chinese">
+    <div class="header-row" :style="gridStyle">
+      <div v-if="showChinese" class="header-col chinese">
         <span class="word" v-html="highlight(item.chinese.word)"></span>
         <span class="romanization">【<span v-html="highlight(item.chinese.romanization)"></span>】</span>
       </div>
-      <div class="header-col japanese">
+      <div v-if="showJapanese" class="header-col japanese">
         <span class="word" v-html="highlight(item.japanese.word)"></span>
         <span class="romanization">【<span v-html="highlight(item.japanese.pronunciation)"></span> <span v-html="highlight(item.japanese.romanization)"></span>】</span>
       </div>
-      <div class="header-col korean">
+      <div v-if="showKorean" class="header-col korean">
         <span class="word" v-html="highlight(item.korean.word)"></span>
         <span class="romanization">【<span v-html="highlight(item.korean.pronunciation)"></span> <span v-html="highlight(item.korean.romanization)"></span>】</span>
       </div>
@@ -124,24 +141,24 @@ const renderText = (dataObj, lang) => {
     <!-- Definitions Loop -->
     <div v-for="(def, index) in item.chinese.definitions" :key="index" class="definition-group">
       <!-- Definition Text Row -->
-      <div class="definition-row">
-        <div class="def-col chinese bg-C">
+      <div class="definition-row" :style="gridStyle">
+        <div v-if="showChinese" class="def-col chinese bg-C">
           <span class="index">{{ index + 1 }}.</span>
           <span v-html="renderText(getDefinitionData(index, 'C'), 'C')"></span>
         </div>
-        <div class="def-col japanese bg-J">
+        <div v-if="showJapanese" class="def-col japanese bg-J">
            <span class="index">①</span>
            <span v-html="renderText(getDefinitionData(index, 'J'), 'J')"></span>
         </div>
-        <div class="def-col korean bg-K">
+        <div v-if="showKorean" class="def-col korean bg-K">
            <span class="index">①</span>
            <span v-html="renderText(getDefinitionData(index, 'K'), 'K')"></span>
         </div>
       </div>
 
       <!-- Examples Row -->
-      <div class="examples-row">
-        <div class="ex-col chinese">
+      <div class="examples-row" :style="gridStyle">
+        <div v-if="showChinese" class="ex-col chinese">
           <div v-for="(ex, i) in getDefinitionData(index, 'C')?.examples" :key="i" class="example">
             <span class="ex-index">①</span> <span v-html="renderText(getExampleData('C', index, i), 'C')"></span>
             
@@ -156,7 +173,7 @@ const renderText = (dataObj, lang) => {
             </div>
           </div>
         </div>
-        <div class="ex-col japanese">
+        <div v-if="showJapanese" class="ex-col japanese">
           <div v-for="(ex, i) in getDefinitionData(index, 'C')?.examples" :key="i" class="example">
             <span class="ex-index">①</span> <span v-html="renderText(getExampleData('J', index, i), 'J')"></span>
             
@@ -171,7 +188,7 @@ const renderText = (dataObj, lang) => {
             </div>
           </div>
         </div>
-        <div class="ex-col korean">
+        <div v-if="showKorean" class="ex-col korean">
           <div v-for="(ex, i) in getDefinitionData(index, 'C')?.examples" :key="i" class="example">
             <span class="ex-index">①</span> <span v-html="renderText(getExampleData('K', index, i), 'K')"></span>
             
@@ -198,10 +215,11 @@ const renderText = (dataObj, lang) => {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.header-row {
+/* Grid styles are now handled dynamically via :style binding */
+/* .header-row, .definition-row, .examples-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-}
+} */
 
 .header-col {
   padding: 10px 15px;
@@ -218,11 +236,10 @@ const renderText = (dataObj, lang) => {
   border-bottom: 1px solid #eee;
 }
 
-.definition-row {
+/* .definition-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* padding: 10px 15px; */ /* Padding moved to columns */
-}
+} */
 
 .def-col {
   padding: 10px 15px;
@@ -234,9 +251,12 @@ const renderText = (dataObj, lang) => {
 .bg-K { background-color: var(--bg-korean-light); }
 
 
-.examples-row {
+/* .examples-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px 0;
+} */
+.examples-row {
   padding: 10px 0;
 }
 

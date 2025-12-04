@@ -3,15 +3,14 @@ import { ref } from 'vue'
 import VocabList from './components/VocabList.vue'
 
 const searchQuery = ref('')
-const globalDefLang = ref('C') // Default to Chinese definitions
+const showChinese = ref(true)
+const showJapanese = ref(true)
+const showKorean = ref(true)
 const showPinyin = ref(true)
 const showFurigana = ref(true)
-const showKorean = ref(true)
+const showKoreanRomanization = ref(true) // Renamed for clarity if needed, but keeping prop name consistent
 const showDepTree = ref(false)
 
-const setGlobalLang = (lang) => {
-  globalDefLang.value = lang
-}
 </script>
 
 <template>
@@ -33,16 +32,15 @@ const setGlobalLang = (lang) => {
           <input type="checkbox" v-model="showFurigana"> Furigana
         </label>
         <label class="toggle">
-          <input type="checkbox" v-model="showKorean"> Korean
+          <input type="checkbox" v-model="showKoreanRomanization"> Korean Rom.
         </label>
         <label class="toggle">
           <input type="checkbox" v-model="showDepTree"> DepTree
         </label>
         <!-- Global Language Toggles (Flags or Buttons) -->
-        <!-- Screenshot shows flags on the right: China, Japan, Korea -->
-        <button @click="setGlobalLang('C')" :class="{ active: globalDefLang === 'C' }" title="Chinese Definitions">🇨🇳</button>
-        <button @click="setGlobalLang('J')" :class="{ active: globalDefLang === 'J' }" title="Japanese Definitions">🇯🇵</button>
-        <button @click="setGlobalLang('K')" :class="{ active: globalDefLang === 'K' }" title="Korean Definitions">🇰🇷</button>
+        <button @click="showChinese = !showChinese" :class="{ active: showChinese }" title="Toggle Chinese">🇨🇳</button>
+        <button @click="showJapanese = !showJapanese" :class="{ active: showJapanese }" title="Toggle Japanese">🇯🇵</button>
+        <button @click="showKorean = !showKorean" :class="{ active: showKorean }" title="Toggle Korean">🇰🇷</button>
       </div>
     </header>
 
@@ -50,10 +48,12 @@ const setGlobalLang = (lang) => {
       <div class="container">
         <VocabList 
           :search-query="searchQuery" 
-          :global-def-lang="globalDefLang"
+          :show-chinese="showChinese"
+          :show-japanese="showJapanese"
+          :show-korean="showKorean"
           :show-pinyin="showPinyin"
           :show-furigana="showFurigana"
-          :show-korean="showKorean"
+          :show-korean-romanization="showKoreanRomanization"
           :show-dep-tree="showDepTree"
         />
       </div>
