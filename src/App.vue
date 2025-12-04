@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import VocabList from './components/VocabList.vue'
 
 const searchQuery = ref('')
@@ -12,11 +12,38 @@ const showKoreanRomanization = ref(true) // Renamed for clarity if needed, but k
 const showDepTree = ref(false)
 const showOptions = ref(false)
 
+const isHeaderVisible = ref(true)
+const lastScrollPosition = ref(0)
+
+const handleScroll = () => {
+  const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
+  
+  if (currentScrollPosition < 0) {
+    return
+  }
+
+  // Stop executing this function if the difference between
+  // current scroll position and last scroll position is less than some offset
+  if (Math.abs(currentScrollPosition - lastScrollPosition.value) < 60) {
+    return
+  }
+
+  isHeaderVisible.value = currentScrollPosition < lastScrollPosition.value
+  lastScrollPosition.value = currentScrollPosition
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 </script>
 
 <template>
   <div class="app-container">
-    <header class="app-header">
+    <header class="app-header" :class="{ 'header-hidden': !isHeaderVisible }">
       <div class="logo">808CJK</div>
       <div class="search-bar">
         <input 
@@ -76,6 +103,11 @@ const showOptions = ref(false)
   top: 0;
   z-index: 100;
   gap: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.app-header.header-hidden {
+  transform: translateY(-100%);
 }
 
 .logo {
