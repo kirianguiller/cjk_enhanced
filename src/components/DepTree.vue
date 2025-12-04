@@ -11,8 +11,9 @@ defineProps({
   <div class="dep-tree-container">
     <reactive-dep-tree 
       :conll="conll" 
-      interactive="true"
-      arc-height="30"
+      interactive="false"
+      shown-features="UPOS,LEMMA,FORM,DEPREL"
+      arc-height="40"
       token-spacing="20"
     ></reactive-dep-tree>
   </div>
