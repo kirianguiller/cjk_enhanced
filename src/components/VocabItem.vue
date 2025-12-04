@@ -317,7 +317,7 @@ rt {
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   z-index: 1000;
-  width: 400px; /* Adjust as needed */
+  width: max-content;
   max-width: 90vw;
   overflow-x: auto;
 }
