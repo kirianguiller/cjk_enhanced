@@ -1,5 +1,5 @@
 <script setup>
-import { computed } from 'vue'
+import { computed, ref, onMounted, onUnmounted, watch, nextTick } from 'vue'
 import VocabItem from './VocabItem.vue'
 import vocabData from '../assets/tcdv.json'
 
@@ -38,7 +38,12 @@ const props = defineProps({
   }
 })
 
-const filteredList = computed(() => {
+const BATCH_SIZE = 20
+const visibleCount = ref(BATCH_SIZE)
+const loadMoreTrigger = ref(null)
+let observer = null
+
+const allFilteredList = computed(() => {
   const query = props.searchQuery.toLowerCase().trim()
   if (!query) return vocabData
 
@@ -68,12 +73,51 @@ const filteredList = computed(() => {
     return false
   })
 })
+
+const visibleList = computed(() => {
+  return allFilteredList.value.slice(0, visibleCount.value)
+})
+
+const loadMore = () => {
+  if (visibleCount.value < allFilteredList.value.length) {
+    visibleCount.value += BATCH_SIZE
+  }
+}
+
+// Reset visible count when search query changes
+watch(() => props.searchQuery, () => {
+  visibleCount.value = BATCH_SIZE
+  // Scroll to top might be good UX here, but let's stick to just resetting the list
+  window.scrollTo(0, 0)
+})
+
+onMounted(() => {
+  observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      loadMore()
+    }
+  }, {
+    root: null,
+    rootMargin: '100px', // Load slightly before reaching the bottom
+    threshold: 0.1
+  })
+
+  if (loadMoreTrigger.value) {
+    observer.observe(loadMoreTrigger.value)
+  }
+})
+
+onUnmounted(() => {
+  if (observer) {
+    observer.disconnect()
+  }
+})
 </script>
 
 <template>
   <div class="vocab-list">
     <VocabItem 
-      v-for="item in filteredList" 
+      v-for="item in visibleList" 
       :key="item.rank" 
       :item="item"
       :show-chinese="showChinese"
@@ -85,7 +129,11 @@ const filteredList = computed(() => {
       :show-korean-romanization="showKoreanRomanization"
       :show-dep-tree="showDepTree"
     />
-    <div v-if="filteredList.length === 0" class="no-results">
+    
+    <!-- Sentinel element for infinite scroll -->
+    <div ref="loadMoreTrigger" class="load-more-trigger" style="height: 20px; margin-top: 20px;"></div>
+
+    <div v-if="allFilteredList.length === 0" class="no-results">
       No results found for "{{ searchQuery }}"
     </div>
   </div>
