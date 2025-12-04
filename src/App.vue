@@ -10,6 +10,7 @@ const showPinyin = ref(true)
 const showFurigana = ref(true)
 const showKoreanRomanization = ref(true) // Renamed for clarity if needed, but keeping prop name consistent
 const showDepTree = ref(false)
+const showOptions = ref(false)
 
 </script>
 
@@ -24,7 +25,7 @@ const showDepTree = ref(false)
           placeholder="Search here..."
         />
       </div>
-      <div class="header-controls">
+      <div class="toggles-group" :class="{ open: showOptions }">
         <label class="toggle">
           <input type="checkbox" v-model="showPinyin"> Pinyin
         </label>
@@ -37,10 +38,12 @@ const showDepTree = ref(false)
         <label class="toggle">
           <input type="checkbox" v-model="showDepTree"> DepTree
         </label>
-        <!-- Global Language Toggles (Flags or Buttons) -->
+      </div>
+      <div class="flags-group">
         <button @click="showChinese = !showChinese" :class="{ active: showChinese }" title="Toggle Chinese">🇨🇳</button>
         <button @click="showJapanese = !showJapanese" :class="{ active: showJapanese }" title="Toggle Japanese">🇯🇵</button>
         <button @click="showKorean = !showKorean" :class="{ active: showKorean }" title="Toggle Korean">🇰🇷</button>
+        <button class="options-toggle" @click="showOptions = !showOptions" :class="{ active: showOptions }" title="Toggle Options">⚙️</button>
       </div>
     </header>
 
@@ -72,18 +75,19 @@ const showDepTree = ref(false)
   position: sticky;
   top: 0;
   z-index: 100;
+  gap: 20px;
 }
 
 .logo {
   font-weight: bold;
   font-size: 1.2em;
   color: #e91e63; /* Pink logo text */
+  white-space: nowrap;
 }
 
 .search-bar {
   flex: 1;
   max-width: 600px;
-  margin: 0 20px;
 }
 
 .search-bar input {
@@ -94,37 +98,50 @@ const showDepTree = ref(false)
   font-size: 1em;
 }
 
-.header-controls {
-  display: flex;
-  align-items: center;
-}
-
-.toggles {
+.toggles-group {
   display: flex;
   gap: 10px;
-  margin-right: 20px;
-  font-size: 0.9em;
 }
 
-.toggles label {
+.flags-group {
+  display: flex;
+  gap: 10px;
+}
+
+.toggles-group label {
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 4px;
+  white-space: nowrap;
 }
 
-.header-controls button {
+.flags-group button {
   background: none;
   border: none;
   font-size: 1.5em;
   cursor: pointer;
   opacity: 0.5;
   transition: opacity 0.2s;
-  margin-left: 10px;
 }
 
-.header-controls button.active,
-.header-controls button:hover {
+.flags-group button.active,
+.flags-group button:hover {
+  opacity: 1;
+}
+
+.options-toggle {
+  display: none; /* Hidden on desktop */
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.options-toggle.active,
+.options-toggle:hover {
   opacity: 1;
 }
 
@@ -136,32 +153,54 @@ const showDepTree = ref(false)
 
 @media (max-width: 768px) {
   .app-header {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "logo flags"
+      "search search"
+      "toggles toggles";
     gap: 10px;
     padding: 10px;
   }
 
   .logo {
-    margin-bottom: 5px;
+    grid-area: logo;
+    margin-bottom: 0;
+    align-self: center;
+  }
+
+  .flags-group {
+    grid-area: flags;
+    justify-self: end;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .options-toggle {
+    display: block; /* Visible on mobile */
   }
 
   .search-bar {
+    grid-area: search;
     width: 100%;
     margin: 0;
     max-width: none;
   }
 
-  .header-controls {
-    width: 100%;
+  .toggles-group {
+    grid-area: toggles;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 8px 12px;
+    display: none; /* Hidden by default on mobile */
+    font-size: 0.85em; /* Smaller font size */
   }
 
-  .toggles {
-    margin-right: 0;
-    flex-wrap: wrap;
-    justify-content: center;
+  .toggles-group.open {
+    display: flex; /* Visible when open */
   }
 }
 </style>
