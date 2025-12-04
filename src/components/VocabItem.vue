@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch } from 'vue'
+import { ref } from 'vue'
 import DepTree from './DepTree.vue'
 
 const props = defineProps({
@@ -33,39 +33,14 @@ const props = defineProps({
   }
 })
 
-
-
-// We need a local state for the definition language if we want to toggle it per row?
-// Or is it global? "language that is clicked on top" might mean global.
-// But the screenshot has [C][J][K] buttons on the definition row.
-// Let's make it controllable via prop but also emit events or have local override.
-// For now, let's use a local state initialized from prop, or just use the prop if it's global.
-// Let's implement local toggle for the definition line.
-
-const localDefLang = ref(props.definitionLanguage || 'C')
 const hoveredTree = ref(null)
 
-watch(() => props.definitionLanguage, (newVal) => {
-  localDefLang.value = newVal
-})
-
-const setLang = (lang) => {
-  localDefLang.value = lang
-}
-
-const getDefinitionData = (defIndex) => {
+const getDefinitionData = (defIndex, langCode) => {
   const langKey = {
     'C': 'chinese',
     'J': 'japanese',
     'K': 'korean'
-  }[localDefLang.value]
-  
-  // We need to find the definition at defIndex for the selected language.
-  // The data structure: item.chinese.definitions[defIndex]
-  // We assume the definitions are aligned by index across languages?
-  // The JSON structure has `definitions` array in each language.
-  // They SHOULD be aligned (same meaning).
-  // Let's assume they are.
+  }[langCode]
   
   const defs = props.item[langKey]?.definitions
   if (defs && defs[defIndex]) {
@@ -149,22 +124,25 @@ const renderText = (dataObj, lang) => {
     <!-- Definitions Loop -->
     <div v-for="(def, index) in item.chinese.definitions" :key="index" class="definition-group">
       <!-- Definition Text Row -->
-      <div class="definition-row" :class="['bg-' + localDefLang]">
-        <div class="def-text">
+      <div class="definition-row">
+        <div class="def-col chinese bg-C">
           <span class="index">{{ index + 1 }}.</span>
-          <span v-html="renderText(getDefinitionData(index), localDefLang)"></span>
+          <span v-html="renderText(getDefinitionData(index, 'C'), 'C')"></span>
         </div>
-        <div class="lang-toggles">
-          <button @click="setLang('C')" :class="{ active: localDefLang === 'C' }" class="btn-c">C</button>
-          <button @click="setLang('J')" :class="{ active: localDefLang === 'J' }" class="btn-j">J</button>
-          <button @click="setLang('K')" :class="{ active: localDefLang === 'K' }" class="btn-k">K</button>
+        <div class="def-col japanese bg-J">
+           <span class="index">①</span>
+           <span v-html="renderText(getDefinitionData(index, 'J'), 'J')"></span>
+        </div>
+        <div class="def-col korean bg-K">
+           <span class="index">①</span>
+           <span v-html="renderText(getDefinitionData(index, 'K'), 'K')"></span>
         </div>
       </div>
 
       <!-- Examples Row -->
       <div class="examples-row">
         <div class="ex-col chinese">
-          <div v-for="(ex, i) in getDefinitionData(index)?.examples" :key="i" class="example">
+          <div v-for="(ex, i) in getDefinitionData(index, 'C')?.examples" :key="i" class="example">
             <span class="ex-index">①</span> <span v-html="renderText(getExampleData('C', index, i), 'C')"></span>
             
             <!-- Tree Icon & Tooltip -->
@@ -179,7 +157,7 @@ const renderText = (dataObj, lang) => {
           </div>
         </div>
         <div class="ex-col japanese">
-          <div v-for="(ex, i) in getDefinitionData(index)?.examples" :key="i" class="example">
+          <div v-for="(ex, i) in getDefinitionData(index, 'C')?.examples" :key="i" class="example">
             <span class="ex-index">①</span> <span v-html="renderText(getExampleData('J', index, i), 'J')"></span>
             
             <!-- Tree Icon & Tooltip -->
@@ -194,7 +172,7 @@ const renderText = (dataObj, lang) => {
           </div>
         </div>
         <div class="ex-col korean">
-          <div v-for="(ex, i) in getDefinitionData(index)?.examples" :key="i" class="example">
+          <div v-for="(ex, i) in getDefinitionData(index, 'C')?.examples" :key="i" class="example">
             <span class="ex-index">①</span> <span v-html="renderText(getExampleData('K', index, i), 'K')"></span>
             
             <!-- Tree Icon & Tooltip -->
@@ -241,36 +219,20 @@ const renderText = (dataObj, lang) => {
 }
 
 .definition-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* padding: 10px 15px; */ /* Padding moved to columns */
+}
+
+.def-col {
   padding: 10px 15px;
-  transition: background-color 0.3s ease;
+  font-size: 1.1em;
 }
 
 .bg-C { background-color: var(--bg-chinese-light); }
 .bg-J { background-color: var(--bg-japanese-light); }
 .bg-K { background-color: var(--bg-korean-light); }
 
-.def-text {
-  font-size: 1.1em;
-}
-
-.lang-toggles button {
-  border: none;
-  padding: 5px 10px;
-  margin-left: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  color: white;
-}
-
-.btn-c { background-color: #ccc; }
-.btn-c.active { background-color: var(--color-chinese); }
-.btn-j { background-color: #ccc; }
-.btn-j.active { background-color: var(--color-japanese); }
-.btn-k { background-color: #ccc; }
-.btn-k.active { background-color: var(--color-korean); color: black; }
 
 .examples-row {
   display: grid;
@@ -288,6 +250,11 @@ const renderText = (dataObj, lang) => {
   margin-bottom: 5px;
   font-size: 0.95em;
   color: #555;
+}
+
+.index {
+  font-weight: bold;
+  margin-right: 5px;
 }
 
 :deep(.highlight) {
